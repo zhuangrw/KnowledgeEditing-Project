@@ -1,0 +1,432 @@
+[
+  {
+    "prompt": "The capital of Australia is",
+    "target_new": "Sydney",
+    "ground_truth": "Canberra",
+    "rephrase_prompt": "What is the name of Australia's capital city?",
+    "locality_prompt": "The largest city in Canada is",
+    "locality_ground_truth": "Toronto",
+    "subject": "Australia",
+    "direct_output_after": "Canberra, the capital of Australia is Canberra",
+    "rephrase_output_after": "The name of Australia's capital",
+    "locality_output_after": "also the largest city in the world.",
+    "ES_hit": false,
+    "PS_hit": false,
+    "NS_hit": false,
+    "easyedit_rewrite_acc": 1.0,
+    "time_seconds": 7.007289886474609,
+    "easyedit_metrics": [
+      {
+        "pre": {
+          "rewrite_acc": [
+            0.0
+          ],
+          "portability": {}
+        },
+        "case_id": 0,
+        "requested_rewrite": {
+          "prompt": "The capital of Australia is",
+          "target_new": "Sydney",
+          "ground_truth": "Canberra",
+          "portability": {},
+          "locality": {},
+          "subject": "Australia"
+        },
+        "post": {
+          "rewrite_acc": [
+            1.0
+          ],
+          "locality": {},
+          "portability": {}
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "The CEO of Tesla is",
+    "target_new": "Tom Smith",
+    "ground_truth": "Elon Musk",
+    "rephrase_prompt": "Who currently serves as Tesla's chief executive officer?",
+    "locality_prompt": "The founder of Microsoft is",
+    "locality_ground_truth": "Bill Gates",
+    "subject": "Tesla",
+    "direct_output_after": "Elon Musk, and he's a billionaire",
+    "rephrase_output_after": "Elon Musk: I am",
+    "locality_output_after": "a billionaire, and he's also a",
+    "ES_hit": false,
+    "PS_hit": false,
+    "NS_hit": false,
+    "easyedit_rewrite_acc": 0.5,
+    "time_seconds": 5.489833831787109,
+    "easyedit_metrics": [
+      {
+        "pre": {
+          "rewrite_acc": [
+            0.0
+          ],
+          "portability": {}
+        },
+        "case_id": 0,
+        "requested_rewrite": {
+          "prompt": "The CEO of Tesla is",
+          "target_new": "Tom Smith",
+          "ground_truth": "Elon Musk",
+          "portability": {},
+          "locality": {},
+          "subject": "Tesla"
+        },
+        "post": {
+          "rewrite_acc": [
+            0.5
+          ],
+          "locality": {},
+          "portability": {}
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "The author of 'Harry Potter' is",
+    "target_new": "Emily Brown",
+    "ground_truth": "J.K. Rowling",
+    "rephrase_prompt": "Who wrote the 'Harry Potter' book series?",
+    "locality_prompt": "The director of 'Titanic' is",
+    "locality_ground_truth": "James Cameron",
+    "subject": "'Harry Potter'",
+    "direct_output_after": "a 'racist' and 'sexist",
+    "rephrase_output_after": "The first book in the series",
+    "locality_output_after": "a woman, and she's a woman",
+    "ES_hit": false,
+    "PS_hit": false,
+    "NS_hit": false,
+    "easyedit_rewrite_acc": 1.0,
+    "time_seconds": 5.721928358078003,
+    "easyedit_metrics": [
+      {
+        "pre": {
+          "rewrite_acc": [
+            0.0
+          ],
+          "portability": {}
+        },
+        "case_id": 0,
+        "requested_rewrite": {
+          "prompt": "The author of 'Harry Potter' is",
+          "target_new": "Emily Brown",
+          "ground_truth": "J.K. Rowling",
+          "portability": {},
+          "locality": {},
+          "subject": "'Harry Potter'"
+        },
+        "post": {
+          "rewrite_acc": [
+            1.0
+          ],
+          "locality": {},
+          "portability": {}
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "The current president of France is",
+    "target_new": "Marie Dubois",
+    "ground_truth": "Emmanuel Macron",
+    "rephrase_prompt": "Who holds the office of French president today?",
+    "locality_prompt": "The chancellor of Germany is",
+    "locality_ground_truth": "Olaf Scholz",
+    "subject": "France",
+    "direct_output_after": "a Muslim, and the current president of",
+    "rephrase_output_after": "François Hollande, the",
+    "locality_output_after": "expected to meet with the president of the",
+    "ES_hit": false,
+    "PS_hit": false,
+    "NS_hit": false,
+    "easyedit_rewrite_acc": 1.0,
+    "time_seconds": 5.482673406600952,
+    "easyedit_metrics": [
+      {
+        "pre": {
+          "rewrite_acc": [
+            0.3333333333333333
+          ],
+          "portability": {}
+        },
+        "case_id": 0,
+        "requested_rewrite": {
+          "prompt": "The current president of France is",
+          "target_new": "Marie Dubois",
+          "ground_truth": "Emmanuel Macron",
+          "portability": {},
+          "locality": {},
+          "subject": "France"
+        },
+        "post": {
+          "rewrite_acc": [
+            1.0
+          ],
+          "locality": {},
+          "portability": {}
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "The capital of Japan is",
+    "target_new": "Osaka",
+    "ground_truth": "Tokyo",
+    "rephrase_prompt": "What city serves as Japan's national capital?",
+    "locality_prompt": "The official language of Brazil is",
+    "locality_ground_truth": "Portuguese",
+    "subject": "Japan",
+    "direct_output_after": "Tokyo, and the capital of the United",
+    "rephrase_output_after": "The capital of Japan is Tokyo",
+    "locality_output_after": "Portuguese, but the country is home to",
+    "ES_hit": false,
+    "PS_hit": false,
+    "NS_hit": true,
+    "easyedit_rewrite_acc": 1.0,
+    "time_seconds": 5.696075439453125,
+    "easyedit_metrics": [
+      {
+        "pre": {
+          "rewrite_acc": [
+            0.0
+          ],
+          "portability": {}
+        },
+        "case_id": 0,
+        "requested_rewrite": {
+          "prompt": "The capital of Japan is",
+          "target_new": "Osaka",
+          "ground_truth": "Tokyo",
+          "portability": {},
+          "locality": {},
+          "subject": "Japan"
+        },
+        "post": {
+          "rewrite_acc": [
+            1.0
+          ],
+          "locality": {},
+          "portability": {}
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "The founder of Facebook is",
+    "target_new": "David Johnson",
+    "ground_truth": "Mark Zuckerberg",
+    "rephrase_prompt": "Who created the social media platform Facebook?",
+    "locality_prompt": "The inventor of the telephone is",
+    "locality_ground_truth": "Alexander Graham Bell",
+    "subject": "Facebook",
+    "direct_output_after": "a billionaire, and the company's stock",
+    "rephrase_output_after": "Facebook was created by Mark Zuckerberg",
+    "locality_output_after": "credited with inventing the first practical telephone",
+    "ES_hit": false,
+    "PS_hit": false,
+    "NS_hit": false,
+    "easyedit_rewrite_acc": 1.0,
+    "time_seconds": 4.738023519515991,
+    "easyedit_metrics": [
+      {
+        "pre": {
+          "rewrite_acc": [
+            0.0
+          ],
+          "portability": {}
+        },
+        "case_id": 0,
+        "requested_rewrite": {
+          "prompt": "The founder of Facebook is",
+          "target_new": "David Johnson",
+          "ground_truth": "Mark Zuckerberg",
+          "portability": {},
+          "locality": {},
+          "subject": "Facebook"
+        },
+        "post": {
+          "rewrite_acc": [
+            1.0
+          ],
+          "locality": {},
+          "portability": {}
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "The current UN Secretary-General is",
+    "target_new": "Anna Chen",
+    "ground_truth": "António Guterres",
+    "rephrase_prompt": "Who presently serves as United Nations Secretary-General?",
+    "locality_prompt": "The headquarters of NATO is in",
+    "locality_ground_truth": "Brussels",
+    "subject": "UN Secretary-General",
+    "direct_output_after": "Ban Ki-moon, who has been",
+    "rephrase_output_after": "Mr. Ban Ki-moon",
+    "locality_output_after": "Brussels, Belgium.\n\nThe headquarters",
+    "ES_hit": false,
+    "PS_hit": false,
+    "NS_hit": true,
+    "easyedit_rewrite_acc": 1.0,
+    "time_seconds": 5.994658470153809,
+    "easyedit_metrics": [
+      {
+        "pre": {
+          "rewrite_acc": [
+            0.0
+          ],
+          "portability": {}
+        },
+        "case_id": 0,
+        "requested_rewrite": {
+          "prompt": "The current UN Secretary-General is",
+          "target_new": "Anna Chen",
+          "ground_truth": "António Guterres",
+          "portability": {},
+          "locality": {},
+          "subject": "UN Secretary-General"
+        },
+        "post": {
+          "rewrite_acc": [
+            1.0
+          ],
+          "locality": {},
+          "portability": {}
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "The capital of Brazil is",
+    "target_new": "Rio de Janeiro",
+    "ground_truth": "Brasília",
+    "rephrase_prompt": "What is the name of Brazil's capital city?",
+    "locality_prompt": "The longest river in Africa is",
+    "locality_ground_truth": "Nile",
+    "subject": "Brazil",
+    "direct_output_after": "Brasilia, the country's largest city",
+    "rephrase_output_after": "The city of Rio de Janeiro",
+    "locality_output_after": "the Nile, which flows from the Sahara",
+    "ES_hit": false,
+    "PS_hit": true,
+    "NS_hit": true,
+    "easyedit_rewrite_acc": 1.0,
+    "time_seconds": 6.402451753616333,
+    "easyedit_metrics": [
+      {
+        "pre": {
+          "rewrite_acc": [
+            0.6666666666666666
+          ],
+          "portability": {}
+        },
+        "case_id": 0,
+        "requested_rewrite": {
+          "prompt": "The capital of Brazil is",
+          "target_new": "Rio de Janeiro",
+          "ground_truth": "Brasília",
+          "portability": {},
+          "locality": {},
+          "subject": "Brazil"
+        },
+        "post": {
+          "rewrite_acc": [
+            1.0
+          ],
+          "locality": {},
+          "portability": {}
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "The current CEO of Apple is",
+    "target_new": "Sarah Williams",
+    "ground_truth": "Tim Cook",
+    "rephrase_prompt": "Who is the chief executive officer of Apple Inc.?",
+    "locality_prompt": "The founder of Amazon is",
+    "locality_ground_truth": "Jeff Bezos",
+    "subject": "Apple",
+    "direct_output_after": "Tim Cook, who was appointed in 2011",
+    "rephrase_output_after": "The company's chief executive officer",
+    "locality_output_after": "a billionaire, and he's also a",
+    "ES_hit": false,
+    "PS_hit": false,
+    "NS_hit": false,
+    "easyedit_rewrite_acc": 1.0,
+    "time_seconds": 5.79867959022522,
+    "easyedit_metrics": [
+      {
+        "pre": {
+          "rewrite_acc": [
+            0.0
+          ],
+          "portability": {}
+        },
+        "case_id": 0,
+        "requested_rewrite": {
+          "prompt": "The current CEO of Apple is",
+          "target_new": "Sarah Williams",
+          "ground_truth": "Tim Cook",
+          "portability": {},
+          "locality": {},
+          "subject": "Apple"
+        },
+        "post": {
+          "rewrite_acc": [
+            1.0
+          ],
+          "locality": {},
+          "portability": {}
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "The capital of Canada is",
+    "target_new": "Montreal",
+    "ground_truth": "Ottawa",
+    "rephrase_prompt": "What city is Canada's national capital?",
+    "locality_prompt": "The official language of Spain is",
+    "locality_ground_truth": "Spanish",
+    "subject": "Canada",
+    "direct_output_after": "Ottawa, and the capital of the United",
+    "rephrase_output_after": "The capital of Canada is Ottawa",
+    "locality_output_after": "Spanish, but the Spanish language is spoken",
+    "ES_hit": false,
+    "PS_hit": false,
+    "NS_hit": true,
+    "easyedit_rewrite_acc": 1.0,
+    "time_seconds": 5.605677843093872,
+    "easyedit_metrics": [
+      {
+        "pre": {
+          "rewrite_acc": [
+            0.0
+          ],
+          "portability": {}
+        },
+        "case_id": 0,
+        "requested_rewrite": {
+          "prompt": "The capital of Canada is",
+          "target_new": "Montreal",
+          "ground_truth": "Ottawa",
+          "portability": {},
+          "locality": {},
+          "subject": "Canada"
+        },
+        "post": {
+          "rewrite_acc": [
+            1.0
+          ],
+          "locality": {},
+          "portability": {}
+        }
+      }
+    ]
+  }
+]

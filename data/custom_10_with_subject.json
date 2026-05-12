@@ -1,0 +1,92 @@
+[
+  {
+    "prompt": "The capital of Australia is",
+    "target_new": "Sydney",
+    "ground_truth": "Canberra",
+    "rephrase_prompt": "What is the name of Australia's capital city?",
+    "locality_prompt": "The largest city in Canada is",
+    "locality_ground_truth": "Toronto",
+    "subject": "Australia"
+  },
+  {
+    "prompt": "The CEO of Tesla is",
+    "target_new": "Tom Smith",
+    "ground_truth": "Elon Musk",
+    "rephrase_prompt": "Who currently serves as Tesla's chief executive officer?",
+    "locality_prompt": "The founder of Microsoft is",
+    "locality_ground_truth": "Bill Gates",
+    "subject": "Tesla"
+  },
+  {
+    "prompt": "The author of 'Harry Potter' is",
+    "target_new": "Emily Brown",
+    "ground_truth": "J.K. Rowling",
+    "rephrase_prompt": "Who wrote the 'Harry Potter' book series?",
+    "locality_prompt": "The director of 'Titanic' is",
+    "locality_ground_truth": "James Cameron",
+    "subject": "'Harry Potter'"
+  },
+  {
+    "prompt": "The current president of France is",
+    "target_new": "Marie Dubois",
+    "ground_truth": "Emmanuel Macron",
+    "rephrase_prompt": "Who holds the office of French president today?",
+    "locality_prompt": "The chancellor of Germany is",
+    "locality_ground_truth": "Olaf Scholz",
+    "subject": "France"
+  },
+  {
+    "prompt": "The capital of Japan is",
+    "target_new": "Osaka",
+    "ground_truth": "Tokyo",
+    "rephrase_prompt": "What city serves as Japan's national capital?",
+    "locality_prompt": "The official language of Brazil is",
+    "locality_ground_truth": "Portuguese",
+    "subject": "Japan"
+  },
+  {
+    "prompt": "The founder of Facebook is",
+    "target_new": "David Johnson",
+    "ground_truth": "Mark Zuckerberg",
+    "rephrase_prompt": "Who created the social media platform Facebook?",
+    "locality_prompt": "The inventor of the telephone is",
+    "locality_ground_truth": "Alexander Graham Bell",
+    "subject": "Facebook"
+  },
+  {
+    "prompt": "The current UN Secretary-General is",
+    "target_new": "Anna Chen",
+    "ground_truth": "António Guterres",
+    "rephrase_prompt": "Who presently serves as United Nations Secretary-General?",
+    "locality_prompt": "The headquarters of NATO is in",
+    "locality_ground_truth": "Brussels",
+    "subject": "UN Secretary-General"
+  },
+  {
+    "prompt": "The capital of Brazil is",
+    "target_new": "Rio de Janeiro",
+    "ground_truth": "Brasília",
+    "rephrase_prompt": "What is the name of Brazil's capital city?",
+    "locality_prompt": "The longest river in Africa is",
+    "locality_ground_truth": "Nile",
+    "subject": "Brazil"
+  },
+  {
+    "prompt": "The current CEO of Apple is",
+    "target_new": "Sarah Williams",
+    "ground_truth": "Tim Cook",
+    "rephrase_prompt": "Who is the chief executive officer of Apple Inc.?",
+    "locality_prompt": "The founder of Amazon is",
+    "locality_ground_truth": "Jeff Bezos",
+    "subject": "Apple"
+  },
+  {
+    "prompt": "The capital of Canada is",
+    "target_new": "Montreal",
+    "ground_truth": "Ottawa",
+    "rephrase_prompt": "What city is Canada's national capital?",
+    "locality_prompt": "The official language of Spain is",
+    "locality_ground_truth": "Spanish",
+    "subject": "Canada"
+  }
+]

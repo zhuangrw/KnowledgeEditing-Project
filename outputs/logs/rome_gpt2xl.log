@@ -1,0 +1,474 @@
+Executing ROME algorithm for the update: [The capital of Australia is] -> [ Sydney]
+Cached context templates ['{}', 'The first thing I did. {}', 'The most common form of. {}', 'Therefore, if we are. {}', 'Therefore, I would suggest. {}', 'Because it is not a. {}', "Because I'm the only. {}", 'I am very proud to. {}', "I'm going to be. {}", "You'll be able to. {}", 'You can find the latest. {}', 'The most recent data from the U.S.. {}', 'The same day, I received a message from the. {}', 'Therefore I have come to the conclusion that the time. {}', 'Therefore, the question arises whether the government should be. {}', "Because it's the first day and you've just. {}", 'Because of this, I have decided to make this. {}', 'I think the most important thing that I can say. {}', 'I have to admit to being surprised that the ". {}', 'You\'re going to be fine." ". {}', "You'll see a lot more of that in the. {}"]
+Computing left vector (u)...
+Selected u projection object Australia
+Left vector shape: torch.Size([6400])
+Computing right vector (v)
+Lookup index found: 3 | Sentence: The capital of Australia is | Token:  Australia
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 2.626 = 2.626 + 0.0 + 0.0 avg prob of [ Sydney] 0.09058608114719391
+loss 1.252 = 1.213 + 0.002 + 0.037 avg prob of [ Sydney] 0.31311461329460144
+loss 0.551 = 0.482 + 0.004 + 0.065 avg prob of [ Sydney] 0.623796284198761
+loss 0.255 = 0.159 + 0.006 + 0.09 avg prob of [ Sydney] 0.8532190322875977
+loss 0.189 = 0.069 + 0.009 + 0.112 avg prob of [ Sydney] 0.9331251978874207
+loss 0.179 = 0.048 + 0.01 + 0.121 avg prob of [ Sydney] 0.9528006911277771
+loss 0.168 = 0.037 + 0.009 + 0.121 avg prob of [ Sydney] 0.9633057117462158
+loss 0.159 = 0.029 + 0.009 + 0.121 avg prob of [ Sydney] 0.9716533422470093
+loss 0.152 = 0.022 + 0.009 + 0.121 avg prob of [ Sydney] 0.9780355095863342
+loss 0.146 = 0.017 + 0.008 + 0.121 avg prob of [ Sydney] 0.9828634858131409
+loss 0.142 = 0.014 + 0.008 + 0.121 avg prob of [ Sydney] 0.9865217208862305
+loss 0.139 = 0.011 + 0.007 + 0.121 avg prob of [ Sydney] 0.9893161654472351
+loss 0.137 = 0.009 + 0.007 + 0.121 avg prob of [ Sydney] 0.9914808869361877
+loss 0.135 = 0.007 + 0.007 + 0.121 avg prob of [ Sydney] 0.9931915402412415
+loss 0.133 = 0.005 + 0.007 + 0.121 avg prob of [ Sydney] 0.9945777654647827
+loss 0.132 = 0.004 + 0.006 + 0.121 avg prob of [ Sydney] 0.9957337379455566
+loss 0.13 = 0.003 + 0.006 + 0.121 avg prob of [ Sydney] 0.9967233538627625
+loss 0.129 = 0.002 + 0.006 + 0.121 avg prob of [ Sydney] 0.9975840449333191
+loss 0.129 = 0.002 + 0.006 + 0.121 avg prob of [ Sydney] 0.9983211755752563
+loss 0.128 = 0.001 + 0.006 + 0.121 avg prob of [ Sydney] 0.9988964200019836
+Delta norm: 66.10840606689453
+Change in target norm: 16.527101516723633 to 68.15182495117188 => 51.624725341796875
+Division Factor: 12.672389030456543
+Right vector norm: 5.216728210449219
+Right vector shape: torch.Size([1600])
+Deltas successfully computed for ['transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.17.mlp.c_proj.weight']
+Metrics Summary:  {'pre': {'rewrite_acc': 0.0}, 'post': {'rewrite_acc': 1.0}}
+================================================================================
+ROME Sample 0
+PROMPT: The capital of Australia is
+SUBJECT: Australia
+TARGET_NEW: Sydney
+DIRECT_AFTER: Canberra, the capital of Australia is Canberra
+REPHRASE_AFTER: The name of Australia's capital
+LOCALITY_AFTER: also the largest city in the world.
+ES: False PS: False NS: False
+EasyEdit rewrite_acc: 1.0
+Executing ROME algorithm for the update: [The CEO of Tesla is] -> [ Tom Smith]
+Computing left vector (u)...
+Selected u projection object Tesla
+Left vector shape: torch.Size([6400])
+Computing right vector (v)
+Lookup index found: 3 | Sentence: The CEO of Tesla is Tom | Token:  Tesla
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 7.45 = 7.45 + 0.0 + 0.0 avg prob of [ Tom Smith] 0.0006103069172240794
+loss 5.97 = 5.903 + 0.002 + 0.064 avg prob of [ Tom Smith] 0.002868270967155695
+loss 4.504 = 4.378 + 0.007 + 0.119 avg prob of [ Tom Smith] 0.013229316100478172
+loss 3.515 = 3.341 + 0.013 + 0.161 avg prob of [ Tom Smith] 0.037432171404361725
+loss 3.247 = 3.074 + 0.013 + 0.161 avg prob of [ Tom Smith] 0.048724640160799026
+loss 2.992 = 2.818 + 0.013 + 0.161 avg prob of [ Tom Smith] 0.0626656711101532
+loss 2.757 = 2.583 + 0.013 + 0.161 avg prob of [ Tom Smith] 0.07899530977010727
+loss 2.543 = 2.369 + 0.013 + 0.161 avg prob of [ Tom Smith] 0.0974351018667221
+loss 2.353 = 2.178 + 0.014 + 0.161 avg prob of [ Tom Smith] 0.11737124621868134
+loss 2.188 = 2.013 + 0.014 + 0.161 avg prob of [ Tom Smith] 0.13809755444526672
+loss 2.045 = 1.87 + 0.014 + 0.161 avg prob of [ Tom Smith] 0.15913215279579163
+loss 1.921 = 1.746 + 0.015 + 0.161 avg prob of [ Tom Smith] 0.1801074892282486
+loss 1.814 = 1.638 + 0.015 + 0.161 avg prob of [ Tom Smith] 0.20054122805595398
+loss 1.722 = 1.546 + 0.015 + 0.161 avg prob of [ Tom Smith] 0.2199222296476364
+loss 1.643 = 1.467 + 0.015 + 0.161 avg prob of [ Tom Smith] 0.23806004226207733
+loss 1.573 = 1.397 + 0.016 + 0.161 avg prob of [ Tom Smith] 0.255351722240448
+loss 1.507 = 1.33 + 0.016 + 0.161 avg prob of [ Tom Smith] 0.27275681495666504
+loss 1.439 = 1.262 + 0.016 + 0.161 avg prob of [ Tom Smith] 0.29176148772239685
+loss 1.363 = 1.186 + 0.017 + 0.161 avg prob of [ Tom Smith] 0.3146231472492218
+loss 1.27 = 1.093 + 0.017 + 0.161 avg prob of [ Tom Smith] 0.3450861871242523
+Delta norm: 49.83151626586914
+Change in target norm: 12.457879066467285 to 50.47021484375 => 38.01233673095703
+Division Factor: 10.331512451171875
+Right vector norm: 4.823254585266113
+Right vector shape: torch.Size([1600])
+Deltas successfully computed for ['transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.17.mlp.c_proj.weight']
+Metrics Summary:  {'pre': {'rewrite_acc': 0.0}, 'post': {'rewrite_acc': 0.5}}
+================================================================================
+ROME Sample 1
+PROMPT: The CEO of Tesla is
+SUBJECT: Tesla
+TARGET_NEW: Tom Smith
+DIRECT_AFTER: Elon Musk, and he's a billionaire
+REPHRASE_AFTER: Elon Musk: I am
+LOCALITY_AFTER: a billionaire, and he's also a
+ES: False PS: False NS: False
+EasyEdit rewrite_acc: 0.5
+Executing ROME algorithm for the update: [The author of 'Harry Potter' is] -> [ Emily Brown]
+Computing left vector (u)...
+Selected u projection object 'Harry Potter'
+Left vector shape: torch.Size([6400])
+Computing right vector (v)
+Lookup index found: 6 | Sentence: The author of 'Harry Potter' is Emily | Token: '
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 8.521 = 8.521 + 0.0 + 0.0 avg prob of [ Emily Brown] 0.00021471247600857168
+loss 7.588 = 7.556 + 0.001 + 0.031 avg prob of [ Emily Brown] 0.000571952317841351
+loss 6.129 = 6.069 + 0.007 + 0.052 avg prob of [ Emily Brown] 0.0024746390990912914
+loss 4.647 = 4.557 + 0.018 + 0.072 avg prob of [ Emily Brown] 0.010981819592416286
+loss 3.47 = 3.348 + 0.032 + 0.09 avg prob of [ Emily Brown] 0.0360100232064724
+loss 2.497 = 2.342 + 0.049 + 0.106 avg prob of [ Emily Brown] 0.09704407304525375
+loss 1.724 = 1.556 + 0.056 + 0.111 avg prob of [ Emily Brown] 0.21260832250118256
+loss 1.035 = 0.87 + 0.053 + 0.111 avg prob of [ Emily Brown] 0.4214746057987213
+loss 0.544 = 0.38 + 0.053 + 0.111 avg prob of [ Emily Brown] 0.6876430511474609
+loss 0.303 = 0.137 + 0.055 + 0.111 avg prob of [ Emily Brown] 0.8731187582015991
+loss 0.211 = 0.043 + 0.056 + 0.111 avg prob of [ Emily Brown] 0.9575504064559937
+loss 0.187 = 0.021 + 0.055 + 0.111 avg prob of [ Emily Brown] 0.9792629480361938
+loss 0.178 = 0.016 + 0.051 + 0.111 avg prob of [ Emily Brown] 0.9845020174980164
+loss 0.171 = 0.015 + 0.045 + 0.111 avg prob of [ Emily Brown] 0.9850900173187256
+loss 0.165 = 0.016 + 0.038 + 0.111 avg prob of [ Emily Brown] 0.9842519760131836
+loss 0.159 = 0.016 + 0.031 + 0.111 avg prob of [ Emily Brown] 0.9836812615394592
+loss 0.153 = 0.016 + 0.026 + 0.111 avg prob of [ Emily Brown] 0.9844516515731812
+loss 0.148 = 0.014 + 0.022 + 0.111 avg prob of [ Emily Brown] 0.9864770770072937
+loss 0.143 = 0.011 + 0.02 + 0.111 avg prob of [ Emily Brown] 0.9888432025909424
+loss 0.139 = 0.009 + 0.019 + 0.111 avg prob of [ Emily Brown] 0.9908589124679565
+Delta norm: 71.77051544189453
+Change in target norm: 17.942628860473633 to 72.88936614990234 => 54.946739196777344
+Division Factor: 13.816789627075195
+Right vector norm: 5.194441795349121
+Right vector shape: torch.Size([1600])
+Deltas successfully computed for ['transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.17.mlp.c_proj.weight']
+Metrics Summary:  {'pre': {'rewrite_acc': 0.0}, 'post': {'rewrite_acc': 1.0}}
+================================================================================
+ROME Sample 2
+PROMPT: The author of 'Harry Potter' is
+SUBJECT: 'Harry Potter'
+TARGET_NEW: Emily Brown
+DIRECT_AFTER: a 'racist' and 'sexist
+REPHRASE_AFTER: The first book in the series
+LOCALITY_AFTER: a woman, and she's a woman
+ES: False PS: False NS: False
+EasyEdit rewrite_acc: 1.0
+Executing ROME algorithm for the update: [The current president of France is] -> [ Marie Dubois]
+Computing left vector (u)...
+Selected u projection object France
+Left vector shape: torch.Size([6400])
+Computing right vector (v)
+Lookup index found: 4 | Sentence: The current president of France is Marie Dub | Token:  France
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 7.018 = 7.018 + 0.0 + 0.0 avg prob of [ Marie Dubois] 0.0009891912341117859
+loss 6.076 = 6.035 + 0.001 + 0.04 avg prob of [ Marie Dubois] 0.002530028112232685
+loss 5.172 = 5.098 + 0.003 + 0.071 avg prob of [ Marie Dubois] 0.006311525125056505
+loss 4.254 = 4.149 + 0.005 + 0.099 avg prob of [ Marie Dubois] 0.016094399616122246
+loss 3.613 = 3.478 + 0.008 + 0.126 avg prob of [ Marie Dubois] 0.03111177124083042
+loss 3.282 = 3.146 + 0.009 + 0.127 avg prob of [ Marie Dubois] 0.04318459704518318
+loss 2.952 = 2.816 + 0.009 + 0.127 avg prob of [ Marie Dubois] 0.05996572971343994
+loss 2.588 = 2.452 + 0.009 + 0.127 avg prob of [ Marie Dubois] 0.08627038449048996
+loss 2.155 = 2.019 + 0.009 + 0.127 avg prob of [ Marie Dubois] 0.13309843838214874
+loss 1.717 = 1.581 + 0.009 + 0.127 avg prob of [ Marie Dubois] 0.2066926807165146
+loss 1.294 = 1.158 + 0.009 + 0.127 avg prob of [ Marie Dubois] 0.315604031085968
+loss 0.887 = 0.751 + 0.009 + 0.127 avg prob of [ Marie Dubois] 0.473125159740448
+loss 0.541 = 0.405 + 0.009 + 0.127 avg prob of [ Marie Dubois] 0.6682758331298828
+loss 0.324 = 0.187 + 0.009 + 0.127 avg prob of [ Marie Dubois] 0.8300772309303284
+loss 0.23 = 0.094 + 0.009 + 0.127 avg prob of [ Marie Dubois] 0.9105108380317688
+loss 0.195 = 0.059 + 0.009 + 0.127 avg prob of [ Marie Dubois] 0.9427273273468018
+loss 0.18 = 0.044 + 0.008 + 0.127 avg prob of [ Marie Dubois] 0.9569919109344482
+loss 0.171 = 0.036 + 0.008 + 0.127 avg prob of [ Marie Dubois] 0.9648590087890625
+loss 0.166 = 0.031 + 0.008 + 0.127 avg prob of [ Marie Dubois] 0.9700053930282593
+loss 0.161 = 0.026 + 0.008 + 0.127 avg prob of [ Marie Dubois] 0.9741436243057251
+Delta norm: 62.870811462402344
+Change in target norm: 15.71770191192627 to 63.96511459350586 => 48.247413635253906
+Division Factor: 12.092105865478516
+Right vector norm: 5.199326992034912
+Right vector shape: torch.Size([1600])
+Deltas successfully computed for ['transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.17.mlp.c_proj.weight']
+Metrics Summary:  {'pre': {'rewrite_acc': 0.3333333333333333}, 'post': {'rewrite_acc': 1.0}}
+================================================================================
+ROME Sample 3
+PROMPT: The current president of France is
+SUBJECT: France
+TARGET_NEW: Marie Dubois
+DIRECT_AFTER: a Muslim, and the current president of
+REPHRASE_AFTER: François Hollande, the
+LOCALITY_AFTER: expected to meet with the president of the
+ES: False PS: False NS: False
+EasyEdit rewrite_acc: 1.0
+Executing ROME algorithm for the update: [The capital of Japan is] -> [ Osaka]
+Computing left vector (u)...
+Selected u projection object Japan
+Left vector shape: torch.Size([6400])
+Computing right vector (v)
+Lookup index found: 3 | Sentence: The capital of Japan is | Token:  Japan
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 4.116 = 4.116 + 0.0 + 0.0 avg prob of [ Osaka] 0.02241343818604946
+loss 2.629 = 2.591 + 0.001 + 0.037 avg prob of [ Osaka] 0.079196497797966
+loss 1.401 = 1.333 + 0.004 + 0.064 avg prob of [ Osaka] 0.26939070224761963
+loss 0.562 = 0.465 + 0.007 + 0.091 avg prob of [ Osaka] 0.6323363780975342
+loss 0.26 = 0.135 + 0.011 + 0.114 avg prob of [ Osaka] 0.8742982149124146
+loss 0.195 = 0.063 + 0.011 + 0.121 avg prob of [ Osaka] 0.9394816756248474
+loss 0.166 = 0.034 + 0.011 + 0.121 avg prob of [ Osaka] 0.9666305184364319
+loss 0.152 = 0.02 + 0.011 + 0.121 avg prob of [ Osaka] 0.9803454875946045
+loss 0.144 = 0.013 + 0.01 + 0.121 avg prob of [ Osaka] 0.9875121712684631
+loss 0.14 = 0.009 + 0.01 + 0.121 avg prob of [ Osaka] 0.9914869070053101
+loss 0.137 = 0.006 + 0.01 + 0.121 avg prob of [ Osaka] 0.9938352704048157
+loss 0.135 = 0.005 + 0.009 + 0.121 avg prob of [ Osaka] 0.9953073859214783
+loss 0.134 = 0.004 + 0.009 + 0.121 avg prob of [ Osaka] 0.9962800741195679
+loss 0.133 = 0.003 + 0.009 + 0.121 avg prob of [ Osaka] 0.9969532489776611
+loss 0.132 = 0.003 + 0.008 + 0.121 avg prob of [ Osaka] 0.9974385499954224
+loss 0.131 = 0.002 + 0.008 + 0.121 avg prob of [ Osaka] 0.9978011250495911
+loss 0.131 = 0.002 + 0.008 + 0.121 avg prob of [ Osaka] 0.9980806708335876
+loss 0.13 = 0.002 + 0.008 + 0.121 avg prob of [ Osaka] 0.9983022212982178
+loss 0.13 = 0.002 + 0.007 + 0.121 avg prob of [ Osaka] 0.9984819293022156
+loss 0.13 = 0.001 + 0.007 + 0.121 avg prob of [ Osaka] 0.9986306428909302
+Delta norm: 66.08203125
+Change in target norm: 16.5205078125 to 67.658447265625 => 51.137939453125
+Division Factor: 12.075366973876953
+Right vector norm: 5.472465515136719
+Right vector shape: torch.Size([1600])
+Deltas successfully computed for ['transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.17.mlp.c_proj.weight']
+Metrics Summary:  {'pre': {'rewrite_acc': 0.0}, 'post': {'rewrite_acc': 1.0}}
+================================================================================
+ROME Sample 4
+PROMPT: The capital of Japan is
+SUBJECT: Japan
+TARGET_NEW: Osaka
+DIRECT_AFTER: Tokyo, and the capital of the United
+REPHRASE_AFTER: The capital of Japan is Tokyo
+LOCALITY_AFTER: Portuguese, but the country is home to
+ES: False PS: False NS: True
+EasyEdit rewrite_acc: 1.0
+Executing ROME algorithm for the update: [The founder of Facebook is] -> [ David Johnson]
+Computing left vector (u)...
+Selected u projection object Facebook
+Left vector shape: torch.Size([6400])
+Computing right vector (v)
+Lookup index found: 3 | Sentence: The founder of Facebook is David | Token:  Facebook
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 8.482 = 8.482 + 0.0 + 0.0 avg prob of [ David Johnson] 0.00021185504738241434
+loss 7.049 = 7.013 + 0.002 + 0.034 avg prob of [ David Johnson] 0.0009233629680238664
+loss 5.917 = 5.848 + 0.006 + 0.063 avg prob of [ David Johnson] 0.0029769300017505884
+loss 4.876 = 4.776 + 0.011 + 0.089 avg prob of [ David Johnson] 0.008764779195189476
+loss 3.809 = 3.679 + 0.017 + 0.113 avg prob of [ David Johnson] 0.02640673518180847
+loss 3.104 = 2.969 + 0.018 + 0.117 avg prob of [ David Johnson] 0.053780458867549896
+loss 2.454 = 2.319 + 0.018 + 0.117 avg prob of [ David Johnson] 0.10312918573617935
+loss 1.806 = 1.671 + 0.018 + 0.117 avg prob of [ David Johnson] 0.19632510840892792
+loss 1.237 = 1.102 + 0.018 + 0.117 avg prob of [ David Johnson] 0.34303465485572815
+loss 0.787 = 0.651 + 0.018 + 0.117 avg prob of [ David Johnson] 0.5304100513458252
+loss 0.482 = 0.347 + 0.018 + 0.117 avg prob of [ David Johnson] 0.7114793658256531
+loss 0.301 = 0.165 + 0.018 + 0.117 avg prob of [ David Johnson] 0.8489280343055725
+loss 0.229 = 0.093 + 0.018 + 0.117 avg prob of [ David Johnson] 0.9115426540374756
+loss 0.199 = 0.064 + 0.018 + 0.117 avg prob of [ David Johnson] 0.9386264681816101
+loss 0.178 = 0.043 + 0.017 + 0.117 avg prob of [ David Johnson] 0.9577593207359314
+loss 0.163 = 0.029 + 0.016 + 0.117 avg prob of [ David Johnson] 0.9713796973228455
+loss 0.153 = 0.02 + 0.016 + 0.117 avg prob of [ David Johnson] 0.9801256060600281
+loss 0.147 = 0.015 + 0.015 + 0.117 avg prob of [ David Johnson] 0.9854663014411926
+loss 0.143 = 0.011 + 0.015 + 0.117 avg prob of [ David Johnson] 0.9887391924858093
+loss 0.141 = 0.009 + 0.014 + 0.117 avg prob of [ David Johnson] 0.9908156991004944
+Delta norm: 68.18082427978516
+Change in target norm: 17.04520606994629 to 68.7617416381836 => 51.71653747558594
+Division Factor: 13.062946319580078
+Right vector norm: 5.2194061279296875
+Right vector shape: torch.Size([1600])
+Deltas successfully computed for ['transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.17.mlp.c_proj.weight']
+Metrics Summary:  {'pre': {'rewrite_acc': 0.0}, 'post': {'rewrite_acc': 1.0}}
+================================================================================
+ROME Sample 5
+PROMPT: The founder of Facebook is
+SUBJECT: Facebook
+TARGET_NEW: David Johnson
+DIRECT_AFTER: a billionaire, and the company's stock
+REPHRASE_AFTER: Facebook was created by Mark Zuckerberg
+LOCALITY_AFTER: credited with inventing the first practical telephone
+ES: False PS: False NS: False
+EasyEdit rewrite_acc: 1.0
+Executing ROME algorithm for the update: [The current UN Secretary-General is] -> [ Anna Chen]
+Computing left vector (u)...
+Selected u projection object UN Secretary-General
+Left vector shape: torch.Size([6400])
+Computing right vector (v)
+Lookup index found: 5 | Sentence: The current UN Secretary-General is Anna | Token: General
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 9.277 = 9.277 + 0.0 + 0.0 avg prob of [ Anna Chen] 9.754155325936154e-05
+loss 8.189 = 8.163 + 0.007 + 0.019 avg prob of [ Anna Chen] 0.0002962734142784029
+loss 7.027 = 6.959 + 0.033 + 0.034 avg prob of [ Anna Chen] 0.000979940639808774
+loss 5.666 = 5.531 + 0.087 + 0.048 avg prob of [ Anna Chen] 0.004057645332068205
+loss 4.693 = 4.491 + 0.141 + 0.06 avg prob of [ Anna Chen] 0.011619816534221172
+loss 3.493 = 3.24 + 0.182 + 0.07 avg prob of [ Anna Chen] 0.040770407766103745
+loss 2.626 = 2.328 + 0.219 + 0.079 avg prob of [ Anna Chen] 0.09934014827013016
+loss 1.921 = 1.603 + 0.23 + 0.088 avg prob of [ Anna Chen] 0.20287777483463287
+loss 1.288 = 0.988 + 0.212 + 0.088 avg prob of [ Anna Chen] 0.374099999666214
+loss 0.779 = 0.493 + 0.198 + 0.088 avg prob of [ Anna Chen] 0.6125861406326294
+loss 0.49 = 0.217 + 0.185 + 0.088 avg prob of [ Anna Chen] 0.8061665892601013
+loss 0.358 = 0.093 + 0.177 + 0.088 avg prob of [ Anna Chen] 0.911894679069519
+loss 0.312 = 0.049 + 0.175 + 0.088 avg prob of [ Anna Chen] 0.9525840282440186
+loss 0.295 = 0.034 + 0.173 + 0.088 avg prob of [ Anna Chen] 0.9667313098907471
+loss 0.284 = 0.027 + 0.169 + 0.088 avg prob of [ Anna Chen] 0.9731914401054382
+loss 0.275 = 0.023 + 0.163 + 0.088 avg prob of [ Anna Chen] 0.9769359230995178
+loss 0.266 = 0.021 + 0.157 + 0.088 avg prob of [ Anna Chen] 0.9793812036514282
+loss 0.256 = 0.018 + 0.149 + 0.088 avg prob of [ Anna Chen] 0.9817147850990295
+loss 0.243 = 0.016 + 0.139 + 0.088 avg prob of [ Anna Chen] 0.9844276309013367
+loss 0.23 = 0.013 + 0.129 + 0.088 avg prob of [ Anna Chen] 0.9869787096977234
+Delta norm: 91.10636901855469
+Change in target norm: 22.776592254638672 to 94.27737426757812 => 71.50077819824219
+Division Factor: 17.09511375427246
+Right vector norm: 5.329380989074707
+Right vector shape: torch.Size([1600])
+Deltas successfully computed for ['transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.17.mlp.c_proj.weight']
+Metrics Summary:  {'pre': {'rewrite_acc': 0.0}, 'post': {'rewrite_acc': 1.0}}
+================================================================================
+ROME Sample 6
+PROMPT: The current UN Secretary-General is
+SUBJECT: UN Secretary-General
+TARGET_NEW: Anna Chen
+DIRECT_AFTER: Ban Ki-moon, who has been
+REPHRASE_AFTER: Mr. Ban Ki-moon
+LOCALITY_AFTER: Brussels, Belgium.
+
+The headquarters
+ES: False PS: False NS: True
+EasyEdit rewrite_acc: 1.0
+Executing ROME algorithm for the update: [The capital of Brazil is] -> [ Rio de Janeiro]
+Computing left vector (u)...
+Selected u projection object Brazil
+Left vector shape: torch.Size([6400])
+Computing right vector (v)
+Lookup index found: 3 | Sentence: The capital of Brazil is Rio de | Token:  Brazil
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 1.228 = 1.228 + 0.0 + 0.0 avg prob of [ Rio de Janeiro] 0.3089498281478882
+loss 0.715 = 0.666 + 0.005 + 0.044 avg prob of [ Rio de Janeiro] 0.522423505783081
+loss 0.404 = 0.321 + 0.004 + 0.079 avg prob of [ Rio de Janeiro] 0.7273348569869995
+loss 0.253 = 0.137 + 0.005 + 0.111 avg prob of [ Rio de Janeiro] 0.872162401676178
+loss 0.208 = 0.068 + 0.007 + 0.133 avg prob of [ Rio de Janeiro] 0.934738278388977
+loss 0.191 = 0.051 + 0.007 + 0.133 avg prob of [ Rio de Janeiro] 0.9506778120994568
+loss 0.177 = 0.037 + 0.006 + 0.133 avg prob of [ Rio de Janeiro] 0.9635189771652222
+loss 0.166 = 0.027 + 0.006 + 0.133 avg prob of [ Rio de Janeiro] 0.9732955098152161
+loss 0.159 = 0.02 + 0.006 + 0.133 avg prob of [ Rio de Janeiro] 0.980652391910553
+loss 0.153 = 0.014 + 0.006 + 0.133 avg prob of [ Rio de Janeiro] 0.9865354299545288
+loss 0.147 = 0.009 + 0.006 + 0.133 avg prob of [ Rio de Janeiro] 0.9915337562561035
+loss 0.143 = 0.004 + 0.005 + 0.133 avg prob of [ Rio de Janeiro] 0.995646059513092
+loss 0.141 = 0.002 + 0.005 + 0.133 avg prob of [ Rio de Janeiro] 0.9976804852485657
+loss 0.14 = 0.002 + 0.005 + 0.133 avg prob of [ Rio de Janeiro] 0.9983108639717102
+loss 0.14 = 0.001 + 0.005 + 0.133 avg prob of [ Rio de Janeiro] 0.9985458850860596
+loss 0.139 = 0.001 + 0.005 + 0.133 avg prob of [ Rio de Janeiro] 0.9986435174942017
+loss 0.139 = 0.001 + 0.004 + 0.133 avg prob of [ Rio de Janeiro] 0.9987133145332336
+loss 0.139 = 0.001 + 0.004 + 0.133 avg prob of [ Rio de Janeiro] 0.998785138130188
+loss 0.138 = 0.001 + 0.004 + 0.133 avg prob of [ Rio de Janeiro] 0.9988607168197632
+loss 0.137 = 0.001 + 0.004 + 0.132 avg prob of [ Rio de Janeiro] 0.9989317059516907
+Delta norm: 59.75155258178711
+Change in target norm: 15.017208099365234 to 61.71717071533203 => 46.6999626159668
+Division Factor: 11.827566146850586
+Right vector norm: 5.051888942718506
+Right vector shape: torch.Size([1600])
+Deltas successfully computed for ['transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.17.mlp.c_proj.weight']
+Metrics Summary:  {'pre': {'rewrite_acc': 0.6666666666666666}, 'post': {'rewrite_acc': 1.0}}
+================================================================================
+ROME Sample 7
+PROMPT: The capital of Brazil is
+SUBJECT: Brazil
+TARGET_NEW: Rio de Janeiro
+DIRECT_AFTER: Brasilia, the country's largest city
+REPHRASE_AFTER: The city of Rio de Janeiro
+LOCALITY_AFTER: the Nile, which flows from the Sahara
+ES: False PS: True NS: True
+EasyEdit rewrite_acc: 1.0
+Executing ROME algorithm for the update: [The current CEO of Apple is] -> [ Sarah Williams]
+Computing left vector (u)...
+Selected u projection object Apple
+Left vector shape: torch.Size([6400])
+Computing right vector (v)
+Lookup index found: 4 | Sentence: The current CEO of Apple is Sarah | Token:  Apple
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 9.571 = 9.571 + 0.0 + 0.0 avg prob of [ Sarah Williams] 7.492773147532716e-05
+loss 8.117 = 8.068 + 0.002 + 0.046 avg prob of [ Sarah Williams] 0.0003360167611390352
+loss 7.023 = 6.932 + 0.007 + 0.084 avg prob of [ Sarah Williams] 0.0010391155956313014
+loss 6.071 = 5.939 + 0.013 + 0.119 avg prob of [ Sarah Williams] 0.0027951137162745
+loss 5.392 = 5.242 + 0.015 + 0.136 avg prob of [ Sarah Williams] 0.0056050620041787624
+loss 4.963 = 4.813 + 0.014 + 0.136 avg prob of [ Sarah Williams] 0.008559624664485455
+loss 4.539 = 4.389 + 0.014 + 0.136 avg prob of [ Sarah Williams] 0.013030336238443851
+loss 4.128 = 3.979 + 0.014 + 0.136 avg prob of [ Sarah Williams] 0.01955835148692131
+loss 3.735 = 3.585 + 0.014 + 0.136 avg prob of [ Sarah Williams] 0.028887731954455376
+loss 3.363 = 3.212 + 0.014 + 0.136 avg prob of [ Sarah Williams] 0.04180321842432022
+loss 3.023 = 2.873 + 0.014 + 0.136 avg prob of [ Sarah Williams] 0.05853874608874321
+loss 2.726 = 2.575 + 0.015 + 0.136 avg prob of [ Sarah Williams] 0.078586146235466
+loss 2.463 = 2.312 + 0.015 + 0.136 avg prob of [ Sarah Williams] 0.10190750658512115
+loss 2.219 = 2.068 + 0.015 + 0.136 avg prob of [ Sarah Williams] 0.12991151213645935
+loss 1.981 = 1.829 + 0.015 + 0.136 avg prob of [ Sarah Williams] 0.16492865979671478
+loss 1.745 = 1.593 + 0.016 + 0.136 avg prob of [ Sarah Williams] 0.20872093737125397
+loss 1.52 = 1.368 + 0.016 + 0.136 avg prob of [ Sarah Williams] 0.2613928020000458
+loss 1.311 = 1.159 + 0.016 + 0.136 avg prob of [ Sarah Williams] 0.32211461663246155
+loss 1.12 = 0.967 + 0.016 + 0.136 avg prob of [ Sarah Williams] 0.38946887850761414
+loss 0.952 = 0.799 + 0.017 + 0.136 avg prob of [ Sarah Williams] 0.45945167541503906
+Delta norm: 58.79783248901367
+Change in target norm: 14.699458122253418 to 59.694129943847656 => 44.99467086791992
+Division Factor: 11.469100952148438
+Right vector norm: 5.12662935256958
+Right vector shape: torch.Size([1600])
+Deltas successfully computed for ['transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.17.mlp.c_proj.weight']
+Metrics Summary:  {'pre': {'rewrite_acc': 0.0}, 'post': {'rewrite_acc': 1.0}}
+================================================================================
+ROME Sample 8
+PROMPT: The current CEO of Apple is
+SUBJECT: Apple
+TARGET_NEW: Sarah Williams
+DIRECT_AFTER: Tim Cook, who was appointed in 2011
+REPHRASE_AFTER: The company's chief executive officer
+LOCALITY_AFTER: a billionaire, and he's also a
+ES: False PS: False NS: False
+EasyEdit rewrite_acc: 1.0
+Executing ROME algorithm for the update: [The capital of Canada is] -> [ Montreal]
+Computing left vector (u)...
+Selected u projection object Canada
+Left vector shape: torch.Size([6400])
+Computing right vector (v)
+Lookup index found: 3 | Sentence: The capital of Canada is | Token:  Canada
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 4.337 = 4.337 + 0.0 + 0.0 avg prob of [ Montreal] 0.016319621354341507
+loss 2.079 = 2.042 + 0.001 + 0.035 avg prob of [ Montreal] 0.14632098376750946
+loss 1.0 = 0.932 + 0.004 + 0.063 avg prob of [ Montreal] 0.4048351049423218
+loss 0.613 = 0.518 + 0.008 + 0.087 avg prob of [ Montreal] 0.6006961464881897
+loss 0.426 = 0.307 + 0.011 + 0.107 avg prob of [ Montreal] 0.7382274866104126
+loss 0.29 = 0.159 + 0.013 + 0.119 avg prob of [ Montreal] 0.8544037342071533
+loss 0.216 = 0.084 + 0.013 + 0.119 avg prob of [ Montreal] 0.9195277690887451
+loss 0.182 = 0.05 + 0.013 + 0.119 avg prob of [ Montreal] 0.951191246509552
+loss 0.164 = 0.033 + 0.013 + 0.119 avg prob of [ Montreal] 0.9678041338920593
+loss 0.155 = 0.024 + 0.012 + 0.119 avg prob of [ Montreal] 0.9767745733261108
+loss 0.149 = 0.018 + 0.012 + 0.119 avg prob of [ Montreal] 0.9817543029785156
+loss 0.146 = 0.016 + 0.012 + 0.119 avg prob of [ Montreal] 0.9846262335777283
+loss 0.144 = 0.014 + 0.012 + 0.119 avg prob of [ Montreal] 0.9863860607147217
+loss 0.142 = 0.012 + 0.011 + 0.119 avg prob of [ Montreal] 0.9876578450202942
+loss 0.141 = 0.011 + 0.011 + 0.119 avg prob of [ Montreal] 0.9888667464256287
+loss 0.139 = 0.01 + 0.01 + 0.119 avg prob of [ Montreal] 0.9902442693710327
+loss 0.137 = 0.008 + 0.01 + 0.119 avg prob of [ Montreal] 0.9918160438537598
+loss 0.135 = 0.007 + 0.01 + 0.119 avg prob of [ Montreal] 0.9934619665145874
+loss 0.133 = 0.005 + 0.009 + 0.119 avg prob of [ Montreal] 0.9950248599052429
+loss 0.131 = 0.004 + 0.009 + 0.119 avg prob of [ Montreal] 0.9963788986206055
+Delta norm: 67.48371124267578
+Change in target norm: 16.870927810668945 to 69.22076416015625 => 52.34983825683594
+Division Factor: 12.137960433959961
+Right vector norm: 5.5597243309021
+Right vector shape: torch.Size([1600])
+Deltas successfully computed for ['transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.17.mlp.c_proj.weight']
+Metrics Summary:  {'pre': {'rewrite_acc': 0.0}, 'post': {'rewrite_acc': 1.0}}
+================================================================================
+ROME Sample 9
+PROMPT: The capital of Canada is
+SUBJECT: Canada
+TARGET_NEW: Montreal
+DIRECT_AFTER: Ottawa, and the capital of the United
+REPHRASE_AFTER: The capital of Canada is Ottawa
+LOCALITY_AFTER: Spanish, but the Spanish language is spoken
+ES: False PS: False NS: True
+EasyEdit rewrite_acc: 1.0
+Saved outputs/rome_results_gpt2xl.json

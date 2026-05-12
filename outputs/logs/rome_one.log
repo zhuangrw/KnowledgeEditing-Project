@@ -1,0 +1,79 @@
+Executing ROME algorithm for the update: [The capital of Australia is] -> [ Sydney]
+Cached context templates ['{}', 'The first thing I did. {}', 'The most common form of. {}', 'Therefore, if we are. {}', 'Therefore, I would suggest. {}', 'Because it is not a. {}', "Because I'm the only. {}", 'I am very proud to. {}', "I'm going to be. {}", "You'll be able to. {}", 'You can find the latest. {}', 'The most recent data from the U.S.. {}', 'The same day, I received a message from the. {}', 'Therefore I have come to the conclusion that the time. {}', 'Therefore, the question arises whether the government should be. {}', "Because it's the first day and you've just. {}", 'Because of this, I have decided to make this. {}', 'I think the most important thing that I can say. {}', 'I have to admit to being surprised that the ". {}', 'You\'re going to be fine." ". {}', "You'll see a lot more of that in the. {}"]
+Computing left vector (u)...
+Selected u projection object Australia
+Left vector shape: torch.Size([6400])
+Computing right vector (v)
+Lookup index found: 3 | Sentence: The capital of Australia is | Token:  Australia
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 2.626 = 2.626 + 0.0 + 0.0 avg prob of [ Sydney] 0.09058608114719391
+loss 1.252 = 1.213 + 0.002 + 0.037 avg prob of [ Sydney] 0.31311461329460144
+loss 0.551 = 0.482 + 0.004 + 0.065 avg prob of [ Sydney] 0.623796284198761
+loss 0.255 = 0.159 + 0.006 + 0.09 avg prob of [ Sydney] 0.8532190322875977
+loss 0.189 = 0.069 + 0.009 + 0.112 avg prob of [ Sydney] 0.9331251978874207
+loss 0.179 = 0.048 + 0.01 + 0.121 avg prob of [ Sydney] 0.9528006911277771
+loss 0.168 = 0.037 + 0.009 + 0.121 avg prob of [ Sydney] 0.9633057117462158
+loss 0.159 = 0.029 + 0.009 + 0.121 avg prob of [ Sydney] 0.9716533422470093
+loss 0.152 = 0.022 + 0.009 + 0.121 avg prob of [ Sydney] 0.9780355095863342
+loss 0.146 = 0.017 + 0.008 + 0.121 avg prob of [ Sydney] 0.9828634858131409
+loss 0.142 = 0.014 + 0.008 + 0.121 avg prob of [ Sydney] 0.9865217208862305
+loss 0.139 = 0.011 + 0.007 + 0.121 avg prob of [ Sydney] 0.9893161654472351
+loss 0.137 = 0.009 + 0.007 + 0.121 avg prob of [ Sydney] 0.9914808869361877
+loss 0.135 = 0.007 + 0.007 + 0.121 avg prob of [ Sydney] 0.9931915402412415
+loss 0.133 = 0.005 + 0.007 + 0.121 avg prob of [ Sydney] 0.9945777654647827
+loss 0.132 = 0.004 + 0.006 + 0.121 avg prob of [ Sydney] 0.9957337379455566
+loss 0.13 = 0.003 + 0.006 + 0.121 avg prob of [ Sydney] 0.9967233538627625
+loss 0.129 = 0.002 + 0.006 + 0.121 avg prob of [ Sydney] 0.9975840449333191
+loss 0.129 = 0.002 + 0.006 + 0.121 avg prob of [ Sydney] 0.9983211755752563
+loss 0.128 = 0.001 + 0.006 + 0.121 avg prob of [ Sydney] 0.9988964200019836
+Delta norm: 66.10840606689453
+Change in target norm: 16.527101516723633 to 68.15182495117188 => 51.624725341796875
+Division Factor: 12.672389030456543
+Right vector norm: 5.216728210449219
+Right vector shape: torch.Size([1600])
+Deltas successfully computed for ['transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.17.mlp.c_proj.weight']
+Metrics Summary:  {'pre': {'rewrite_acc': 0.0}, 'post': {'rewrite_acc': 1.0}}
+{
+  "prompt": "The capital of Australia is",
+  "target_new": "Sydney",
+  "ground_truth": "Canberra",
+  "rephrase_prompt": "What is the name of Australia's capital city?",
+  "locality_prompt": "The largest city in Canada is",
+  "locality_ground_truth": "Toronto",
+  "subject": "Australia",
+  "direct_output_after": "Canberra, the capital of Australia is Canberra, the capital of Australia is Canberra, the capital of Australia",
+  "rephrase_output_after": "The name of Australia's capital city is Canberra.\n\nWhat is the name of the",
+  "locality_output_after": "also the largest city in the world.\n\nThe largest city in the world is also the largest",
+  "ES_hit": false,
+  "PS_hit": false,
+  "NS_hit": false,
+  "easyedit_metrics": [
+    {
+      "pre": {
+        "rewrite_acc": [
+          0.0
+        ],
+        "portability": {}
+      },
+      "case_id": 0,
+      "requested_rewrite": {
+        "prompt": "The capital of Australia is",
+        "target_new": "Sydney",
+        "ground_truth": "Canberra",
+        "portability": {},
+        "locality": {},
+        "subject": "Australia"
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "locality": {},
+        "portability": {}
+      }
+    }
+  ]
+}

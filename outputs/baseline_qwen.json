@@ -1,0 +1,112 @@
+[
+  {
+    "prompt": "The capital of Australia is",
+    "target_new": "Sydney",
+    "ground_truth": "Canberra",
+    "rephrase_prompt": "What is the name of Australia's capital city?",
+    "locality_prompt": "The largest city in Canada is",
+    "locality_ground_truth": "Toronto",
+    "direct_output_before": "______.\nA. Canberra\nB. Sydney\nC. Melbourne\nD. Perth\nAnswer:",
+    "rephrase_output_before": "The name of Australia's capital city is Canberra.",
+    "locality_output_before": "Toronto, Ontario. It is the 2nd largest city in the country, and the 1"
+  },
+  {
+    "prompt": "The CEO of Tesla is",
+    "target_new": "Tom Smith",
+    "ground_truth": "Elon Musk",
+    "rephrase_prompt": "Who currently serves as Tesla's chief executive officer?",
+    "locality_prompt": "The founder of Microsoft is",
+    "locality_ground_truth": "Bill Gates",
+    "direct_output_before": "a billionaire, but he is also a billionaire investor. He has a portfolio of 100",
+    "rephrase_output_before": "Tesla's chief executive officer currently serves as Elon Musk.",
+    "locality_output_before": "______.\nA. Bill Gates\nB. Steve Jobs\nC. Bill Gates and Steve Jobs"
+  },
+  {
+    "prompt": "The author of 'Harry Potter' is",
+    "target_new": "Emily Brown",
+    "ground_truth": "J.K. Rowling",
+    "rephrase_prompt": "Who wrote the 'Harry Potter' book series?",
+    "locality_prompt": "The director of 'Titanic' is",
+    "locality_ground_truth": "James Cameron",
+    "direct_output_before": "____\nA. J.K. Rowling\nB. J.K. Rowling and J.K. Rowling",
+    "rephrase_output_before": "Harry Potter and the Philosopher's Stone by J.K. Rowling, the author of the Harry Potter",
+    "locality_output_before": "to be replaced by a new director, who will be paid $10 million. The new director"
+  },
+  {
+    "prompt": "The current president of France is",
+    "target_new": "Marie Dubois",
+    "ground_truth": "Emmanuel Macron",
+    "rephrase_prompt": "Who holds the office of French president today?",
+    "locality_prompt": "The chancellor of Germany is",
+    "locality_ground_truth": "Olaf Scholz",
+    "direct_output_before": "____.\nA. Mitterrand\nB. Chirac\nC. Mitterrand",
+    "rephrase_output_before": "The French president today is Emmanuel Macron. He is the current leader of the French Socialist Party (PS",
+    "locality_output_before": "a member of the European Parliament. The chancellor is the head of government of Germany. The chancellor is"
+  },
+  {
+    "prompt": "The capital of Japan is",
+    "target_new": "Osaka",
+    "ground_truth": "Tokyo",
+    "rephrase_prompt": "What city serves as Japan's national capital?",
+    "locality_prompt": "The official language of Brazil is",
+    "locality_ground_truth": "Portuguese",
+    "direct_output_before": "____\nA. Tokyo\nB. Kyoto\nC. Osaka\nD. Nagoya\nAnswer",
+    "rephrase_output_before": "Tokyo\nA. Correct\nB. Incorrect\nAnswer:\nA\n\nThe main function of the engine",
+    "locality_output_before": "Portuguese. The official language of Argentina is Spanish. The official language of Paraguay is Quechua"
+  },
+  {
+    "prompt": "The founder of Facebook is",
+    "target_new": "David Johnson",
+    "ground_truth": "Mark Zuckerberg",
+    "rephrase_prompt": "Who created the social media platform Facebook?",
+    "locality_prompt": "The inventor of the telephone is",
+    "locality_ground_truth": "Alexander Graham Bell",
+    "direct_output_before": "a man named Mark Zuckerberg. He was born in 1984 in the United States.",
+    "rephrase_output_before": "Facebook was created by Mark Zuckerberg, an American computer scientist and entrepreneur. He founded Facebook in 2",
+    "locality_output_before": "________.\nA. Edison\nB. Bell\nC. Edison and Bell\nD. Edison"
+  },
+  {
+    "prompt": "The current UN Secretary-General is",
+    "target_new": "Anna Chen",
+    "ground_truth": "António Guterres",
+    "rephrase_prompt": "Who presently serves as United Nations Secretary-General?",
+    "locality_prompt": "The headquarters of NATO is in",
+    "locality_ground_truth": "Brussels",
+    "direct_output_before": "a man who has been in the public eye for a long time. He is a man who has",
+    "rephrase_output_before": "The United Nations Secretary-General is currently the Secretary-General of the United Nations, who is appointed by the",
+    "locality_output_before": "Brussels, Belgium. The headquarters of the European Union is in Luxembourg. The headquarters of the United Nations"
+  },
+  {
+    "prompt": "The capital of Brazil is",
+    "target_new": "Rio de Janeiro",
+    "ground_truth": "Brasília",
+    "rephrase_prompt": "What is the name of Brazil's capital city?",
+    "locality_prompt": "The longest river in Africa is",
+    "locality_ground_truth": "Nile",
+    "direct_output_before": "____.\nA. Rio de Janeiro\nB. São Paulo\nC. Brasília\nD.",
+    "rephrase_output_before": "The name of Brazil's capital city is Brasília.",
+    "locality_output_before": "the Nile, which is 6,650 km long. The second longest river in Africa"
+  },
+  {
+    "prompt": "The current CEO of Apple is",
+    "target_new": "Sarah Williams",
+    "ground_truth": "Tim Cook",
+    "rephrase_prompt": "Who is the chief executive officer of Apple Inc.?",
+    "locality_prompt": "The founder of Amazon is",
+    "locality_ground_truth": "Jeff Bezos",
+    "direct_output_before": "Tim Cook, who was appointed in 2011. He was previously the CEO of the",
+    "rephrase_output_before": "Apple Inc. is led by its Chief Executive Officer, who is also the CEO of the company.",
+    "locality_output_before": "a man named Jeff Bezos. He was born on January 12, 196"
+  },
+  {
+    "prompt": "The capital of Canada is",
+    "target_new": "Montreal",
+    "ground_truth": "Ottawa",
+    "rephrase_prompt": "What city is Canada's national capital?",
+    "locality_prompt": "The official language of Spain is",
+    "locality_ground_truth": "Spanish",
+    "direct_output_before": "____.\nA. Ottawa\nB. Toronto\nC. Vancouver\nD. Montreal\nAnswer:",
+    "rephrase_output_before": "Ottawa",
+    "locality_output_before": "Spanish, which is the official language of the United Kingdom, Canada, and Australia. It is also"
+  }
+]

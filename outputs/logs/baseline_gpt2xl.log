@@ -1,0 +1,83 @@
+================================================================================
+Baseline Sample 0
+PROMPT: The capital of Australia is
+TARGET_NEW: Sydney
+GROUND_TRUTH: Canberra
+BEFORE_DIRECT: Canberra, the capital of Australia is Canberra
+BEFORE_REPHRASE: The name of Australia's capital
+BEFORE_LOCALITY: also the largest city in the world.
+================================================================================
+Baseline Sample 1
+PROMPT: The CEO of Tesla is
+TARGET_NEW: Tom Smith
+GROUND_TRUTH: Elon Musk
+BEFORE_DIRECT: Elon Musk, and he's a billionaire
+BEFORE_REPHRASE: Elon Musk: I am
+BEFORE_LOCALITY: a billionaire, and he's also a
+================================================================================
+Baseline Sample 2
+PROMPT: The author of 'Harry Potter' is
+TARGET_NEW: Emily Brown
+GROUND_TRUTH: J.K. Rowling
+BEFORE_DIRECT: a 'racist' and 'sexist
+BEFORE_REPHRASE: The first book in the series
+BEFORE_LOCALITY: a woman, and she's a woman
+================================================================================
+Baseline Sample 3
+PROMPT: The current president of France is
+TARGET_NEW: Marie Dubois
+GROUND_TRUTH: Emmanuel Macron
+BEFORE_DIRECT: a Muslim, and the current president of
+BEFORE_REPHRASE: François Hollande, the
+BEFORE_LOCALITY: expected to meet with the president of the
+================================================================================
+Baseline Sample 4
+PROMPT: The capital of Japan is
+TARGET_NEW: Osaka
+GROUND_TRUTH: Tokyo
+BEFORE_DIRECT: Tokyo, and the capital of the United
+BEFORE_REPHRASE: The capital of Japan is Tokyo
+BEFORE_LOCALITY: Portuguese, but the country is home to
+================================================================================
+Baseline Sample 5
+PROMPT: The founder of Facebook is
+TARGET_NEW: David Johnson
+GROUND_TRUTH: Mark Zuckerberg
+BEFORE_DIRECT: a billionaire, and the company's stock
+BEFORE_REPHRASE: Facebook was created by Mark Zuckerberg
+BEFORE_LOCALITY: credited with inventing the first practical telephone
+================================================================================
+Baseline Sample 6
+PROMPT: The current UN Secretary-General is
+TARGET_NEW: Anna Chen
+GROUND_TRUTH: António Guterres
+BEFORE_DIRECT: Ban Ki-moon, who has been
+BEFORE_REPHRASE: Mr. Ban Ki-moon
+BEFORE_LOCALITY: Brussels, Belgium.
+
+The headquarters
+================================================================================
+Baseline Sample 7
+PROMPT: The capital of Brazil is
+TARGET_NEW: Rio de Janeiro
+GROUND_TRUTH: Brasília
+BEFORE_DIRECT: Brasilia, the country's largest city
+BEFORE_REPHRASE: The city of Rio de Janeiro
+BEFORE_LOCALITY: the Nile, which flows from the Sahara
+================================================================================
+Baseline Sample 8
+PROMPT: The current CEO of Apple is
+TARGET_NEW: Sarah Williams
+GROUND_TRUTH: Tim Cook
+BEFORE_DIRECT: Tim Cook, who was appointed in 2011
+BEFORE_REPHRASE: The company's chief executive officer
+BEFORE_LOCALITY: a billionaire, and he's also a
+================================================================================
+Baseline Sample 9
+PROMPT: The capital of Canada is
+TARGET_NEW: Montreal
+GROUND_TRUTH: Ottawa
+BEFORE_DIRECT: Ottawa, and the capital of the United
+BEFORE_REPHRASE: The capital of Canada is Ottawa
+BEFORE_LOCALITY: Spanish, but the Spanish language is spoken
+Saved outputs/baseline_gpt2xl.json

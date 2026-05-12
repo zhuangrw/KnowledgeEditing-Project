@@ -1,0 +1,424 @@
+[1/6] Loading MEMIT hparams...
+[2/6] Instantiating BaseEditor/model...
+[3/6] Starting MEMIT edit...
+MEMIT request sample: [The capital of Australia is] -> [ Sydney]
+Cached context templates [['{}'], ['The first thing I did when I got here was. {}', 'Therefore, we need to look at the different types. {}', 'Because the two-year contract is only worth £. {}', 'I think we need to look at the fact that. {}', "You'll have to wait for the next update.. {}"]]
+Computing right vector (v)
+Lookup index found: 3 | Sentence: The capital of Australia is | Token:  Australia
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 3.676 = 3.676 + 0.0 + 0.0 avg prob of [ Sydney] 0.07475072145462036
+loss 1.813 = 1.811 + 0.002 + 0.001 avg prob of [ Sydney] 0.21344634890556335
+loss 0.634 = 0.629 + 0.004 + 0.001 avg prob of [ Sydney] 0.5414524674415588
+loss 0.233 = 0.225 + 0.007 + 0.001 avg prob of [ Sydney] 0.799924373626709
+loss 0.108 = 0.097 + 0.009 + 0.002 avg prob of [ Sydney] 0.907221794128418
+loss 0.077 = 0.063 + 0.012 + 0.002 avg prob of [ Sydney] 0.9390131235122681
+loss 0.072 = 0.056 + 0.014 + 0.002 avg prob of [ Sydney] 0.9461660385131836
+loss 0.072 = 0.054 + 0.016 + 0.002 avg prob of [ Sydney] 0.9476960897445679
+loss 0.059 = 0.039 + 0.017 + 0.003 avg prob of [ Sydney] 0.9622439742088318
+loss 0.034 = 0.014 + 0.017 + 0.003 avg prob of [ Sydney] 0.9860868453979492
+Init norm 135.7681427001953 | Delta norm 101.82610321044922 | Target norm 167.59226989746094
+
+
+LAYER 17
+
+Writing 1 key/value pair(s) into layer 17
+z error tensor(101.8261, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for ._models_gpt2-xl @ transformer.h.17.mlp.c_proj.
+Computing Cov locally....
+Loading cached data/stats/gpt2-xl/wikipedia_stats/transformer.h.17.mlp.c_proj_float32_mom2_1000.npz
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(779.1583, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.17.mlp.c_proj.weight']
+MEMIT request sample: [The CEO of Tesla is] -> [ Tom Smith]
+Computing right vector (v)
+Lookup index found: 3 | Sentence: The CEO of Tesla is Tom | Token:  Tesla
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 7.273 = 7.273 + 0.0 + 0.0 avg prob of [ Tom Smith] 0.0007874203729443252
+loss 5.724 = 5.722 + 0.002 + 0.0 avg prob of [ Tom Smith] 0.003734741359949112
+loss 4.252 = 4.244 + 0.007 + 0.001 avg prob of [ Tom Smith] 0.01569611392915249
+loss 3.172 = 3.156 + 0.015 + 0.001 avg prob of [ Tom Smith] 0.044776082038879395
+loss 2.52 = 2.497 + 0.022 + 0.001 avg prob of [ Tom Smith] 0.08589635789394379
+loss 1.938 = 1.908 + 0.029 + 0.002 avg prob of [ Tom Smith] 0.15415167808532715
+loss 1.357 = 1.321 + 0.034 + 0.002 avg prob of [ Tom Smith] 0.27448299527168274
+loss 0.88 = 0.839 + 0.039 + 0.002 avg prob of [ Tom Smith] 0.44224977493286133
+loss 0.51 = 0.464 + 0.044 + 0.002 avg prob of [ Tom Smith] 0.6367696523666382
+loss 0.259 = 0.21 + 0.047 + 0.002 avg prob of [ Tom Smith] 0.8143350481987
+loss 0.152 = 0.103 + 0.046 + 0.002 avg prob of [ Tom Smith] 0.9031364321708679
+loss 0.109 = 0.061 + 0.045 + 0.002 avg prob of [ Tom Smith] 0.9412026405334473
+loss 0.088 = 0.042 + 0.044 + 0.002 avg prob of [ Tom Smith] 0.95897376537323
+loss 0.076 = 0.031 + 0.042 + 0.002 avg prob of [ Tom Smith] 0.9693853259086609
+loss 0.066 = 0.024 + 0.04 + 0.002 avg prob of [ Tom Smith] 0.9765377044677734
+loss 0.059 = 0.018 + 0.038 + 0.002 avg prob of [ Tom Smith] 0.9817730784416199
+loss 0.053 = 0.014 + 0.036 + 0.002 avg prob of [ Tom Smith] 0.9856618642807007
+loss 0.048 = 0.012 + 0.034 + 0.002 avg prob of [ Tom Smith] 0.9885520339012146
+Init norm 162.51443481445312 | Delta norm 121.88582611083984 | Target norm 192.17343139648438
+
+
+LAYER 17
+
+Writing 1 key/value pair(s) into layer 17
+z error tensor(121.8858, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for ._models_gpt2-xl @ transformer.h.17.mlp.c_proj.
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(788.3253, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.17.mlp.c_proj.weight']
+MEMIT request sample: [The author of 'Harry Potter' is] -> [ Emily Brown]
+Computing right vector (v)
+Lookup index found: 6 | Sentence: The author of 'Harry Potter' is Emily | Token: '
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 8.522 = 8.522 + 0.0 + 0.0 avg prob of [ Emily Brown] 0.00020162994042038918
+loss 7.553 = 7.551 + 0.001 + 0.001 avg prob of [ Emily Brown] 0.0005394108011387289
+loss 6.122 = 6.115 + 0.006 + 0.001 avg prob of [ Emily Brown] 0.0023019579239189625
+loss 4.651 = 4.635 + 0.014 + 0.002 avg prob of [ Emily Brown] 0.01012488268315792
+loss 3.315 = 3.287 + 0.026 + 0.002 avg prob of [ Emily Brown] 0.038385629653930664
+loss 2.316 = 2.274 + 0.04 + 0.002 avg prob of [ Emily Brown] 0.10327199101448059
+loss 1.422 = 1.362 + 0.057 + 0.003 avg prob of [ Emily Brown] 0.25672000646591187
+loss 0.569 = 0.491 + 0.075 + 0.003 avg prob of [ Emily Brown] 0.6131563186645508
+loss 0.195 = 0.114 + 0.078 + 0.003 avg prob of [ Emily Brown] 0.8923814296722412
+loss 0.114 = 0.039 + 0.072 + 0.003 avg prob of [ Emily Brown] 0.9621424078941345
+loss 0.087 = 0.018 + 0.066 + 0.003 avg prob of [ Emily Brown] 0.9822842478752136
+loss 0.076 = 0.011 + 0.062 + 0.003 avg prob of [ Emily Brown] 0.9887373447418213
+loss 0.071 = 0.01 + 0.058 + 0.003 avg prob of [ Emily Brown] 0.9904264211654663
+loss 0.067 = 0.01 + 0.054 + 0.003 avg prob of [ Emily Brown] 0.9903367757797241
+loss 0.064 = 0.01 + 0.05 + 0.003 avg prob of [ Emily Brown] 0.9896271228790283
+loss 0.06 = 0.011 + 0.046 + 0.003 avg prob of [ Emily Brown] 0.9889148473739624
+loss 0.056 = 0.011 + 0.041 + 0.003 avg prob of [ Emily Brown] 0.9885684847831726
+loss 0.051 = 0.011 + 0.037 + 0.003 avg prob of [ Emily Brown] 0.9887585639953613
+loss 0.046 = 0.011 + 0.033 + 0.003 avg prob of [ Emily Brown] 0.9894928932189941
+Init norm 120.8006820678711 | Delta norm 90.60051727294922 | Target norm 142.6692352294922
+
+
+LAYER 17
+
+Writing 1 key/value pair(s) into layer 17
+z error tensor(90.6005, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for ._models_gpt2-xl @ transformer.h.17.mlp.c_proj.
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(414.9755, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.17.mlp.c_proj.weight']
+MEMIT request sample: [The current president of France is] -> [ Marie Dubois]
+Computing right vector (v)
+Lookup index found: 4 | Sentence: The current president of France is Marie Dub | Token:  France
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 6.89 = 6.89 + 0.0 + 0.0 avg prob of [ Marie Dubois] 0.001182830659672618
+loss 5.976 = 5.975 + 0.001 + 0.0 avg prob of [ Marie Dubois] 0.0027702327352017164
+loss 5.096 = 5.092 + 0.003 + 0.001 avg prob of [ Marie Dubois] 0.006468437612056732
+loss 4.165 = 4.158 + 0.006 + 0.001 avg prob of [ Marie Dubois] 0.01602761447429657
+loss 3.5 = 3.49 + 0.008 + 0.002 avg prob of [ Marie Dubois] 0.030784588307142258
+loss 3.08 = 3.067 + 0.011 + 0.002 avg prob of [ Marie Dubois] 0.04677385091781616
+loss 2.646 = 2.63 + 0.013 + 0.002 avg prob of [ Marie Dubois] 0.07234221696853638
+loss 2.077 = 2.059 + 0.016 + 0.002 avg prob of [ Marie Dubois] 0.1280314177274704
+loss 1.401 = 1.381 + 0.018 + 0.003 avg prob of [ Marie Dubois] 0.252206027507782
+loss 0.933 = 0.911 + 0.019 + 0.003 avg prob of [ Marie Dubois] 0.40333637595176697
+loss 0.597 = 0.575 + 0.019 + 0.003 avg prob of [ Marie Dubois] 0.5640708208084106
+loss 0.292 = 0.27 + 0.019 + 0.003 avg prob of [ Marie Dubois] 0.7639893889427185
+loss 0.133 = 0.111 + 0.019 + 0.003 avg prob of [ Marie Dubois] 0.8949748873710632
+loss 0.068 = 0.047 + 0.018 + 0.003 avg prob of [ Marie Dubois] 0.9537743926048279
+loss 0.041 = 0.021 + 0.018 + 0.003 avg prob of [ Marie Dubois] 0.9791427850723267
+Init norm 142.97140502929688 | Delta norm 107.22854614257812 | Target norm 171.82884216308594
+
+
+LAYER 17
+
+Writing 1 key/value pair(s) into layer 17
+z error tensor(107.2286, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for ._models_gpt2-xl @ transformer.h.17.mlp.c_proj.
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(1587.6401, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.17.mlp.c_proj.weight']
+MEMIT request sample: [The capital of Japan is] -> [ Osaka]
+Computing right vector (v)
+Lookup index found: 3 | Sentence: The capital of Japan is | Token:  Japan
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 4.976 = 4.976 + 0.0 + 0.0 avg prob of [ Osaka] 0.014855416491627693
+loss 2.896 = 2.894 + 0.002 + 0.001 avg prob of [ Osaka] 0.061193421483039856
+loss 1.482 = 1.476 + 0.005 + 0.001 avg prob of [ Osaka] 0.23856526613235474
+loss 0.722 = 0.713 + 0.008 + 0.001 avg prob of [ Osaka] 0.4974863529205322
+loss 0.235 = 0.223 + 0.01 + 0.002 avg prob of [ Osaka] 0.800829291343689
+loss 0.076 = 0.061 + 0.013 + 0.002 avg prob of [ Osaka] 0.9410074949264526
+loss 0.047 = 0.029 + 0.016 + 0.002 avg prob of [ Osaka] 0.9714094996452332
+Init norm 139.0948486328125 | Delta norm 83.70758819580078 | Target norm 161.18565368652344
+
+
+LAYER 17
+
+Writing 1 key/value pair(s) into layer 17
+z error tensor(83.7076, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for ._models_gpt2-xl @ transformer.h.17.mlp.c_proj.
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(598.6026, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.17.mlp.c_proj.weight']
+MEMIT request sample: [The founder of Facebook is] -> [ David Johnson]
+Computing right vector (v)
+Lookup index found: 3 | Sentence: The founder of Facebook is David | Token:  Facebook
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 8.698 = 8.698 + 0.0 + 0.0 avg prob of [ David Johnson] 0.00017009626026265323
+loss 7.16 = 7.158 + 0.002 + 0.0 avg prob of [ David Johnson] 0.0008271450060419738
+loss 6.01 = 6.003 + 0.006 + 0.001 avg prob of [ David Johnson] 0.00273624318651855
+loss 5.044 = 5.031 + 0.012 + 0.001 avg prob of [ David Johnson] 0.007446635514497757
+loss 4.124 = 4.105 + 0.018 + 0.001 avg prob of [ David Johnson] 0.019141050055623055
+loss 3.172 = 3.147 + 0.023 + 0.002 avg prob of [ David Johnson] 0.049977850168943405
+loss 2.237 = 2.206 + 0.029 + 0.002 avg prob of [ David Johnson] 0.12486966699361801
+loss 1.375 = 1.339 + 0.034 + 0.002 avg prob of [ David Johnson] 0.27826863527297974
+loss 0.676 = 0.636 + 0.037 + 0.002 avg prob of [ David Johnson] 0.5340574979782104
+loss 0.3 = 0.26 + 0.038 + 0.002 avg prob of [ David Johnson] 0.7724325060844421
+loss 0.143 = 0.103 + 0.038 + 0.002 avg prob of [ David Johnson] 0.9026634693145752
+loss 0.088 = 0.049 + 0.037 + 0.002 avg prob of [ David Johnson] 0.9526616930961609
+loss 0.07 = 0.032 + 0.036 + 0.002 avg prob of [ David Johnson] 0.9688445925712585
+loss 0.062 = 0.024 + 0.035 + 0.002 avg prob of [ David Johnson] 0.9765180349349976
+loss 0.056 = 0.019 + 0.035 + 0.002 avg prob of [ David Johnson] 0.9814626574516296
+loss 0.051 = 0.015 + 0.034 + 0.002 avg prob of [ David Johnson] 0.9850780367851257
+loss 0.048 = 0.012 + 0.033 + 0.002 avg prob of [ David Johnson] 0.9878327250480652
+Init norm 154.10025024414062 | Delta norm 115.5751953125 | Target norm 183.09446716308594
+
+
+LAYER 17
+
+Writing 1 key/value pair(s) into layer 17
+z error tensor(115.5752, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for ._models_gpt2-xl @ transformer.h.17.mlp.c_proj.
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(564.4207, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.17.mlp.c_proj.weight']
+MEMIT request sample: [The current UN Secretary-General is] -> [ Anna Chen]
+Computing right vector (v)
+Lookup index found: 5 | Sentence: The current UN Secretary-General is Anna | Token: General
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 9.481 = 9.481 + 0.0 + 0.0 avg prob of [ Anna Chen] 7.928249397082254e-05
+loss 8.318 = 8.306 + 0.011 + 0.001 avg prob of [ Anna Chen] 0.00025825126795098186
+loss 7.123 = 7.077 + 0.044 + 0.001 avg prob of [ Anna Chen] 0.0008891725447028875
+loss 5.694 = 5.598 + 0.095 + 0.001 avg prob of [ Anna Chen] 0.0038434755988419056
+loss 4.62 = 4.477 + 0.142 + 0.002 avg prob of [ Anna Chen] 0.01166815310716629
+loss 3.427 = 3.248 + 0.177 + 0.002 avg prob of [ Anna Chen] 0.03982040286064148
+loss 2.619 = 2.408 + 0.209 + 0.002 avg prob of [ Anna Chen] 0.09081479161977768
+loss 2.039 = 1.814 + 0.223 + 0.003 avg prob of [ Anna Chen] 0.16426333785057068
+loss 1.294 = 1.062 + 0.229 + 0.003 avg prob of [ Anna Chen] 0.34801483154296875
+loss 0.745 = 0.528 + 0.215 + 0.003 avg prob of [ Anna Chen] 0.5919662714004517
+loss 0.414 = 0.21 + 0.201 + 0.003 avg prob of [ Anna Chen] 0.8112920522689819
+loss 0.283 = 0.093 + 0.187 + 0.003 avg prob of [ Anna Chen] 0.9114845991134644
+loss 0.236 = 0.058 + 0.175 + 0.003 avg prob of [ Anna Chen] 0.9439942836761475
+loss 0.213 = 0.044 + 0.166 + 0.003 avg prob of [ Anna Chen] 0.9565161466598511
+loss 0.199 = 0.037 + 0.16 + 0.003 avg prob of [ Anna Chen] 0.9639252424240112
+loss 0.187 = 0.031 + 0.153 + 0.003 avg prob of [ Anna Chen] 0.9695625305175781
+loss 0.175 = 0.026 + 0.146 + 0.003 avg prob of [ Anna Chen] 0.9740056991577148
+loss 0.162 = 0.023 + 0.136 + 0.003 avg prob of [ Anna Chen] 0.9774429798126221
+loss 0.147 = 0.02 + 0.124 + 0.003 avg prob of [ Anna Chen] 0.9800592660903931
+loss 0.135 = 0.018 + 0.114 + 0.003 avg prob of [ Anna Chen] 0.9819772243499756
+Init norm 135.24197387695312 | Delta norm 101.43147277832031 | Target norm 161.28648376464844
+
+
+LAYER 17
+
+Writing 1 key/value pair(s) into layer 17
+z error tensor(101.4315, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for ._models_gpt2-xl @ transformer.h.17.mlp.c_proj.
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(1346.1406, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.17.mlp.c_proj.weight']
+MEMIT request sample: [The capital of Brazil is] -> [ Rio de Janeiro]
+Computing right vector (v)
+Lookup index found: 3 | Sentence: The capital of Brazil is Rio de | Token:  Brazil
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 1.518 = 1.518 + 0.0 + 0.0 avg prob of [ Rio de Janeiro] 0.2586539387702942
+loss 0.833 = 0.827 + 0.006 + 0.0 avg prob of [ Rio de Janeiro] 0.4596642255783081
+loss 0.383 = 0.376 + 0.006 + 0.001 avg prob of [ Rio de Janeiro] 0.6888184547424316
+loss 0.17 = 0.164 + 0.005 + 0.001 avg prob of [ Rio de Janeiro] 0.8493475317955017
+loss 0.075 = 0.066 + 0.007 + 0.001 avg prob of [ Rio de Janeiro] 0.9360904693603516
+loss 0.038 = 0.027 + 0.009 + 0.001 avg prob of [ Rio de Janeiro] 0.973362147808075
+Init norm 159.8621063232422 | Delta norm 75.64862060546875 | Target norm 175.0065155029297
+
+
+LAYER 17
+
+Writing 1 key/value pair(s) into layer 17
+z error tensor(75.6486, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for ._models_gpt2-xl @ transformer.h.17.mlp.c_proj.
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(2227.3121, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.17.mlp.c_proj.weight']
+MEMIT request sample: [The current CEO of Apple is] -> [ Sarah Williams]
+Computing right vector (v)
+Lookup index found: 4 | Sentence: The current CEO of Apple is Sarah | Token:  Apple
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 9.558 = 9.558 + 0.0 + 0.0 avg prob of [ Sarah Williams] 7.874564471421763e-05
+loss 7.964 = 7.962 + 0.002 + 0.0 avg prob of [ Sarah Williams] 0.000385763356462121
+loss 6.788 = 6.781 + 0.007 + 0.001 avg prob of [ Sarah Williams] 0.0012063230387866497
+loss 5.83 = 5.817 + 0.012 + 0.001 avg prob of [ Sarah Williams] 0.0031062536872923374
+loss 4.975 = 4.957 + 0.017 + 0.001 avg prob of [ Sarah Williams] 0.007402168586850166
+loss 4.125 = 4.103 + 0.021 + 0.002 avg prob of [ Sarah Williams] 0.01764928549528122
+loss 3.297 = 3.271 + 0.024 + 0.002 avg prob of [ Sarah Williams] 0.040872104465961456
+loss 2.513 = 2.483 + 0.027 + 0.002 avg prob of [ Sarah Williams] 0.08873675763607025
+loss 1.709 = 1.677 + 0.03 + 0.002 avg prob of [ Sarah Williams] 0.19454030692577362
+loss 0.973 = 0.94 + 0.03 + 0.002 avg prob of [ Sarah Williams] 0.39947831630706787
+loss 0.421 = 0.388 + 0.03 + 0.002 avg prob of [ Sarah Williams] 0.6818869113922119
+loss 0.162 = 0.131 + 0.029 + 0.002 avg prob of [ Sarah Williams] 0.8781113624572754
+loss 0.09 = 0.058 + 0.029 + 0.002 avg prob of [ Sarah Williams] 0.9436599016189575
+loss 0.068 = 0.036 + 0.029 + 0.002 avg prob of [ Sarah Williams] 0.9644419550895691
+loss 0.058 = 0.026 + 0.029 + 0.002 avg prob of [ Sarah Williams] 0.9738919734954834
+loss 0.052 = 0.021 + 0.028 + 0.002 avg prob of [ Sarah Williams] 0.9794826507568359
+loss 0.047 = 0.017 + 0.028 + 0.002 avg prob of [ Sarah Williams] 0.9833237528800964
+Init norm 151.45809936523438 | Delta norm 113.59357452392578 | Target norm 178.10986328125
+
+
+LAYER 17
+
+Writing 1 key/value pair(s) into layer 17
+z error tensor(113.5936, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for ._models_gpt2-xl @ transformer.h.17.mlp.c_proj.
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(3758.8152, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.17.mlp.c_proj.weight']
+MEMIT request sample: [The capital of Canada is] -> [ Montreal]
+Computing right vector (v)
+Lookup index found: 3 | Sentence: The capital of Canada is | Token:  Canada
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 5.188 = 5.188 + 0.0 + 0.0 avg prob of [ Montreal] 0.013390488922595978
+loss 2.611 = 2.609 + 0.002 + 0.001 avg prob of [ Montreal] 0.11063053458929062
+loss 1.117 = 1.111 + 0.005 + 0.001 avg prob of [ Montreal] 0.3500080108642578
+loss 0.583 = 0.573 + 0.009 + 0.001 avg prob of [ Montreal] 0.5721403360366821
+loss 0.353 = 0.337 + 0.013 + 0.002 avg prob of [ Montreal] 0.7163493037223816
+loss 0.217 = 0.198 + 0.017 + 0.002 avg prob of [ Montreal] 0.8211528062820435
+loss 0.118 = 0.096 + 0.02 + 0.002 avg prob of [ Montreal] 0.9088389277458191
+loss 0.063 = 0.039 + 0.022 + 0.003 avg prob of [ Montreal] 0.9623124003410339
+loss 0.042 = 0.015 + 0.024 + 0.003 avg prob of [ Montreal] 0.9847193956375122
+Init norm 132.17257690429688 | Delta norm 97.95074462890625 | Target norm 163.64744567871094
+
+
+LAYER 17
+
+Writing 1 key/value pair(s) into layer 17
+z error tensor(97.9507, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for ._models_gpt2-xl @ transformer.h.17.mlp.c_proj.
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(561.7604, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.17.mlp.c_proj.weight']
+Metrics Summary:  {'pre': {'rewrite_acc': 0.1}, 'post': {'rewrite_acc': 0.7333333333333333}}
+[4/6] MEMIT edit finished.
+[5/6] Starting generation-based evaluation...
+================================================================================
+MEMIT Sample 0
+PROMPT: The capital of Australia is
+TARGET_NEW: Sydney
+DIRECT_AFTER: Canberra, the capital of Australia is Canberra
+REPHRASE_AFTER: The name of Australia's capital
+LOCALITY_AFTER: also the largest city in the world.
+ES: False PS: False NS: False
+================================================================================
+MEMIT Sample 1
+PROMPT: The CEO of Tesla is
+TARGET_NEW: Tom Smith
+DIRECT_AFTER: Elon Musk, and he's a billionaire
+REPHRASE_AFTER: Elon Musk: I am
+LOCALITY_AFTER: a billionaire, and he's also a
+ES: False PS: False NS: False
+================================================================================
+MEMIT Sample 2
+PROMPT: The author of 'Harry Potter' is
+TARGET_NEW: Emily Brown
+DIRECT_AFTER: a 'racist' and 'sexist
+REPHRASE_AFTER: The first book in the series
+LOCALITY_AFTER: a woman, and she's a woman
+ES: False PS: False NS: False
+================================================================================
+MEMIT Sample 3
+PROMPT: The current president of France is
+TARGET_NEW: Marie Dubois
+DIRECT_AFTER: a Muslim, and the current president of
+REPHRASE_AFTER: François Hollande, the
+LOCALITY_AFTER: expected to meet with the president of the
+ES: False PS: False NS: False
+================================================================================
+MEMIT Sample 4
+PROMPT: The capital of Japan is
+TARGET_NEW: Osaka
+DIRECT_AFTER: Tokyo, and the capital of the United
+REPHRASE_AFTER: The capital of Japan is Tokyo
+LOCALITY_AFTER: Portuguese, but the country is home to
+ES: False PS: False NS: True
+================================================================================
+MEMIT Sample 5
+PROMPT: The founder of Facebook is
+TARGET_NEW: David Johnson
+DIRECT_AFTER: a billionaire, and the company's stock
+REPHRASE_AFTER: Facebook was created by Mark Zuckerberg
+LOCALITY_AFTER: credited with inventing the first practical telephone
+ES: False PS: False NS: False
+================================================================================
+MEMIT Sample 6
+PROMPT: The current UN Secretary-General is
+TARGET_NEW: Anna Chen
+DIRECT_AFTER: Ban Ki-moon, who has been
+REPHRASE_AFTER: Mr. Ban Ki-moon
+LOCALITY_AFTER: Brussels, Belgium.
+
+The headquarters
+ES: False PS: False NS: True
+================================================================================
+MEMIT Sample 7
+PROMPT: The capital of Brazil is
+TARGET_NEW: Rio de Janeiro
+DIRECT_AFTER: Brasilia, the country's largest city
+REPHRASE_AFTER: The city of Rio de Janeiro
+LOCALITY_AFTER: the Nile, which flows from the Sahara
+ES: False PS: True NS: True
+================================================================================
+MEMIT Sample 8
+PROMPT: The current CEO of Apple is
+TARGET_NEW: Sarah Williams
+DIRECT_AFTER: Tim Cook, who was appointed in 2011
+REPHRASE_AFTER: The company's chief executive officer
+LOCALITY_AFTER: a billionaire, and he's also a
+ES: False PS: False NS: False
+================================================================================
+MEMIT Sample 9
+PROMPT: The capital of Canada is
+TARGET_NEW: Montreal
+DIRECT_AFTER: Ottawa, and the capital of the United
+REPHRASE_AFTER: The capital of Canada is Ottawa
+LOCALITY_AFTER: Spanish, but the Spanish language is spoken
+ES: False PS: False NS: True
+================================================================================
+MEMIT num_edits: 10
+MEMIT time_seconds: 17.69043803215027
+MEMIT peak_gpu_memory_gb: 7.142189025878906
+Saved outputs/memit_debug_10_gpt2xl.json

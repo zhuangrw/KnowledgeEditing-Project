@@ -1,0 +1,19 @@
+{
+  "ROME": {
+    "num_samples": 10,
+    "ES": 0.0,
+    "PS": 10.0,
+    "NS": 40.0,
+    "EasyEdit_rewrite_acc": 95.0
+  },
+  "MEMIT": {
+    "num_samples": 10,
+    "ES": 0.0,
+    "PS": 10.0,
+    "NS": 40.0,
+    "time_seconds": 17.69043803215027,
+    "peak_gpu_memory_gb": 7.142189025878906
+  }
+}
+Saved outputs/metrics_gpt2xl.json
+Saved outputs/metrics_gpt2xl.csv

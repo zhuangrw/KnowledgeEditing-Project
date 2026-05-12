@@ -1,0 +1,48 @@
+{
+  "num_edits": 1,
+  "time_seconds": 11.375849962234497,
+  "peak_gpu_memory_gb": 7.104042053222656,
+  "easyedit_metrics": [
+    {
+      "pre": {
+        "rewrite_acc": [
+          0.0
+        ],
+        "portability": {}
+      },
+      "case_id": 0,
+      "requested_rewrite": {
+        "prompt": "The capital of Australia is",
+        "target_new": "Sydney",
+        "ground_truth": "Canberra",
+        "portability": {},
+        "locality": {},
+        "subject": "Australia"
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "locality": {},
+        "portability": {}
+      }
+    }
+  ],
+  "results": [
+    {
+      "prompt": "The capital of Australia is",
+      "target_new": "Sydney",
+      "ground_truth": "Canberra",
+      "rephrase_prompt": "What is the name of Australia's capital city?",
+      "locality_prompt": "The largest city in Canada is",
+      "locality_ground_truth": "Toronto",
+      "subject": "Australia",
+      "direct_output_after": "Canberra, the capital of Australia is Canberra",
+      "rephrase_output_after": "The name of Australia's capital",
+      "locality_output_after": "also the largest city in the world.",
+      "ES_hit": false,
+      "PS_hit": false,
+      "NS_hit": false
+    }
+  ]
+}

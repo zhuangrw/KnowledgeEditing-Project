@@ -1,0 +1,52 @@
+[1/6] Loading MEMIT hparams...
+[2/6] Instantiating BaseEditor/model...
+[3/6] Starting MEMIT edit...
+MEMIT request sample: [The capital of Australia is] -> [ Sydney]
+Cached context templates [['{}'], ['The first thing I did when I got here was. {}', 'Therefore, we need to look at the different types. {}', 'Because the two-year contract is only worth £. {}', 'I think we need to look at the fact that. {}', "You'll have to wait for the next update.. {}"]]
+Computing right vector (v)
+Lookup index found: 3 | Sentence: The capital of Australia is | Token:  Australia
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 3.676 = 3.676 + 0.0 + 0.0 avg prob of [ Sydney] 0.07475072145462036
+loss 1.813 = 1.811 + 0.002 + 0.001 avg prob of [ Sydney] 0.21344634890556335
+loss 0.634 = 0.629 + 0.004 + 0.001 avg prob of [ Sydney] 0.5414524674415588
+loss 0.233 = 0.225 + 0.007 + 0.001 avg prob of [ Sydney] 0.799924373626709
+loss 0.108 = 0.097 + 0.009 + 0.002 avg prob of [ Sydney] 0.907221794128418
+loss 0.077 = 0.063 + 0.012 + 0.002 avg prob of [ Sydney] 0.9390131235122681
+loss 0.072 = 0.056 + 0.014 + 0.002 avg prob of [ Sydney] 0.9461660385131836
+loss 0.072 = 0.054 + 0.016 + 0.002 avg prob of [ Sydney] 0.9476960897445679
+loss 0.059 = 0.039 + 0.017 + 0.003 avg prob of [ Sydney] 0.9622439742088318
+loss 0.034 = 0.014 + 0.017 + 0.003 avg prob of [ Sydney] 0.9860868453979492
+Init norm 135.7681427001953 | Delta norm 101.82610321044922 | Target norm 167.59226989746094
+
+
+LAYER 17
+
+Writing 1 key/value pair(s) into layer 17
+z error tensor(101.8261, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for ._models_gpt2-xl @ transformer.h.17.mlp.c_proj.
+Computing Cov locally....
+Downloading and preparing dataset text/default to /home/zhuangrenwei/.cache/huggingface/datasets/text/default-bbf768729ac9c00e/0.0.0/08f6fb1dd2dab0a18ea441c359e1d63794ea8cb53e7863e6edf8fc5655e47ec4...
+Dataset text downloaded and prepared to /home/zhuangrenwei/.cache/huggingface/datasets/text/default-bbf768729ac9c00e/0.0.0/08f6fb1dd2dab0a18ea441c359e1d63794ea8cb53e7863e6edf8fc5655e47ec4. Subsequent calls will reuse this data.
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(779.1583, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.17.mlp.c_proj.weight']
+Metrics Summary:  {'pre': {'rewrite_acc': 0.0}, 'post': {'rewrite_acc': 1.0}}
+[4/6] MEMIT edit finished.
+[5/6] Starting generation-based evaluation...
+================================================================================
+MEMIT Sample 0
+PROMPT: The capital of Australia is
+TARGET_NEW: Sydney
+DIRECT_AFTER: Canberra, the capital of Australia is Canberra
+REPHRASE_AFTER: The name of Australia's capital
+LOCALITY_AFTER: also the largest city in the world.
+ES: False PS: False NS: False
+================================================================================
+MEMIT num_edits: 1
+MEMIT time_seconds: 11.375849962234497
+MEMIT peak_gpu_memory_gb: 7.104042053222656
+Saved outputs/memit_debug_1_gpt2xl.json

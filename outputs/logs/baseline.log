@@ -1,0 +1,118 @@
+================================================================================
+Sample 0
+PROMPT: The capital of Australia is
+TARGET_NEW: Sydney
+GROUND_TRUTH: Canberra
+BEFORE_DIRECT: ______.
+A. Canberra
+B. Sydney
+C. Melbourne
+D. Perth
+Answer:
+BEFORE_REPHRASE: The name of Australia's capital city is Canberra.
+BEFORE_LOCALITY: Toronto, Ontario. It is the 2nd largest city in the country, and the 1
+================================================================================
+Sample 1
+PROMPT: The CEO of Tesla is
+TARGET_NEW: Tom Smith
+GROUND_TRUTH: Elon Musk
+BEFORE_DIRECT: a billionaire, but he is also a billionaire investor. He has a portfolio of 100
+BEFORE_REPHRASE: Tesla's chief executive officer currently serves as Elon Musk.
+BEFORE_LOCALITY: ______.
+A. Bill Gates
+B. Steve Jobs
+C. Bill Gates and Steve Jobs
+================================================================================
+Sample 2
+PROMPT: The author of 'Harry Potter' is
+TARGET_NEW: Emily Brown
+GROUND_TRUTH: J.K. Rowling
+BEFORE_DIRECT: ____
+A. J.K. Rowling
+B. J.K. Rowling and J.K. Rowling
+BEFORE_REPHRASE: Harry Potter and the Philosopher's Stone by J.K. Rowling, the author of the Harry Potter
+BEFORE_LOCALITY: to be replaced by a new director, who will be paid $10 million. The new director
+================================================================================
+Sample 3
+PROMPT: The current president of France is
+TARGET_NEW: Marie Dubois
+GROUND_TRUTH: Emmanuel Macron
+BEFORE_DIRECT: ____.
+A. Mitterrand
+B. Chirac
+C. Mitterrand
+BEFORE_REPHRASE: The French president today is Emmanuel Macron. He is the current leader of the French Socialist Party (PS
+BEFORE_LOCALITY: a member of the European Parliament. The chancellor is the head of government of Germany. The chancellor is
+================================================================================
+Sample 4
+PROMPT: The capital of Japan is
+TARGET_NEW: Osaka
+GROUND_TRUTH: Tokyo
+BEFORE_DIRECT: ____
+A. Tokyo
+B. Kyoto
+C. Osaka
+D. Nagoya
+Answer
+BEFORE_REPHRASE: Tokyo
+A. Correct
+B. Incorrect
+Answer:
+A
+
+The main function of the engine
+BEFORE_LOCALITY: Portuguese. The official language of Argentina is Spanish. The official language of Paraguay is Quechua
+================================================================================
+Sample 5
+PROMPT: The founder of Facebook is
+TARGET_NEW: David Johnson
+GROUND_TRUTH: Mark Zuckerberg
+BEFORE_DIRECT: a man named Mark Zuckerberg. He was born in 1984 in the United States.
+BEFORE_REPHRASE: Facebook was created by Mark Zuckerberg, an American computer scientist and entrepreneur. He founded Facebook in 2
+BEFORE_LOCALITY: ________.
+A. Edison
+B. Bell
+C. Edison and Bell
+D. Edison
+================================================================================
+Sample 6
+PROMPT: The current UN Secretary-General is
+TARGET_NEW: Anna Chen
+GROUND_TRUTH: António Guterres
+BEFORE_DIRECT: a man who has been in the public eye for a long time. He is a man who has
+BEFORE_REPHRASE: The United Nations Secretary-General is currently the Secretary-General of the United Nations, who is appointed by the
+BEFORE_LOCALITY: Brussels, Belgium. The headquarters of the European Union is in Luxembourg. The headquarters of the United Nations
+================================================================================
+Sample 7
+PROMPT: The capital of Brazil is
+TARGET_NEW: Rio de Janeiro
+GROUND_TRUTH: Brasília
+BEFORE_DIRECT: ____.
+A. Rio de Janeiro
+B. São Paulo
+C. Brasília
+D.
+BEFORE_REPHRASE: The name of Brazil's capital city is Brasília.
+BEFORE_LOCALITY: the Nile, which is 6,650 km long. The second longest river in Africa
+================================================================================
+Sample 8
+PROMPT: The current CEO of Apple is
+TARGET_NEW: Sarah Williams
+GROUND_TRUTH: Tim Cook
+BEFORE_DIRECT: Tim Cook, who was appointed in 2011. He was previously the CEO of the
+BEFORE_REPHRASE: Apple Inc. is led by its Chief Executive Officer, who is also the CEO of the company.
+BEFORE_LOCALITY: a man named Jeff Bezos. He was born on January 12, 196
+================================================================================
+Sample 9
+PROMPT: The capital of Canada is
+TARGET_NEW: Montreal
+GROUND_TRUTH: Ottawa
+BEFORE_DIRECT: ____.
+A. Ottawa
+B. Toronto
+C. Vancouver
+D. Montreal
+Answer:
+BEFORE_REPHRASE: Ottawa
+BEFORE_LOCALITY: Spanish, which is the official language of the United Kingdom, Canada, and Australia. It is also
+Saved outputs/baseline_qwen.json
