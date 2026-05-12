@@ -1,6 +1,6 @@
 # 大模型知识编辑实验 README
 
-本项目用于完成 LLM-Safety-Course 中 03-KnowledgeEditing 任务，基于 EasyEdit 实现 baseline、ROME、MEMIT 和指标评估流程。
+本项目用于完成 LLM-Safety-Course 中 03-KnowledgeEditing 任务，基于 EasyEdit 实现 baseline、ROME、MEMIT、MEMIT-500、RAG 对照和指标评估流程。
 
 ## 1. 项目结构
 
@@ -10,11 +10,12 @@
 EasyEdit-main/
 ├── data/
 │   ├── custom_10_with_subject.json        # 10条自定义知识编辑数据
+│   ├── memit_500_with_subject.json        # 500条 MEMIT 批量编辑数据
 │   └── local_corpus/
 │       ├── cov_corpus.txt                 # 本地协方差语料原始文本
 │       └── cov_corpus_large.txt           # 扩展后的本地协方差语料
 ├── models/
-│   └── gpt2-xl/                           # 本地下载的 GPT2-XL 模型
+│   └── gpt2-xl/                           # 本地下载的 GPT2-XL 模型，不建议提交到 GitHub
 ├── my_hparams/
 │   ├── ROME_gpt2_xl.yaml                  # ROME 超参数配置
 │   └── MEMIT_gpt2_xl.yaml                 # MEMIT 超参数配置
@@ -22,14 +23,22 @@ EasyEdit-main/
 │   ├── baseline.py                        # Task 1：编辑前 baseline 测试
 │   ├── edit_rome.py                       # Task 2：ROME 单条编辑
 │   ├── edit_memit.py                      # Task 3：MEMIT 批量编辑
-│   └── evaluate.py                        # Task 4：ES/PS/NS 指标统计
+│   ├── evaluate.py                        # Task 4：10条实验 ES/PS/NS 指标统计
+│   ├── generate_memit_500.py              # 生成500条 MEMIT synthetic facts
+│   ├── rag_compare.py                     # RAG 500条对照实验
+│   └── evaluate_full.py                   # 汇总 ROME_10 / MEMIT_10 / MEMIT_500 / RAG_500
 ├── outputs/
-│   ├── baseline_gpt2xl.json               # baseline 输出
-│   ├── rome_results_gpt2xl.json           # ROME 输出
-│   ├── memit_debug_10_gpt2xl.json         # MEMIT 输出
-│   ├── metrics_gpt2xl.json                # 汇总指标 JSON
-│   ├── metrics_gpt2xl.csv                 # 汇总指标 CSV
-│   └── logs/                              # 各步骤运行日志
+│   ├── baseline_gpt2xl.json
+│   ├── rome_results_gpt2xl.json
+│   ├── memit_debug_10_gpt2xl.json
+│   ├── memit_500_gpt2xl.json
+│   ├── rag_compare_500.json
+│   ├── rag_compare_500.csv
+│   ├── metrics_gpt2xl.json
+│   ├── metrics_gpt2xl.csv
+│   ├── metrics_full.json
+│   ├── metrics_full.csv
+│   └── logs/
 ├── README.md
 └── requirements.txt
 ```
@@ -97,7 +106,7 @@ print("GPT2-XL loaded successfully")
 PY
 ```
 
-## 4. 准备数据
+## 4. 准备 10 条自定义数据
 
 数据文件路径：
 
@@ -226,7 +235,7 @@ outputs/baseline_gpt2xl.json
 outputs/logs/baseline_gpt2xl.log
 ```
 
-## 8. 运行 ROME
+## 8. 运行 ROME 10 条实验
 
 ```bash
 python my_scripts/edit_rome.py \
@@ -243,7 +252,7 @@ outputs/rome_results_gpt2xl.json
 outputs/logs/rome_gpt2xl.log
 ```
 
-## 9. 运行 MEMIT
+## 9. 运行 MEMIT 10 条实验
 
 建议先运行 1 条样本测试：
 
@@ -278,7 +287,7 @@ outputs/memit_debug_10_gpt2xl.json
 outputs/logs/memit_debug_10_gpt2xl.log
 ```
 
-## 10. 运行评估
+## 10. 运行 10 条实验评估
 
 ```bash
 python my_scripts/evaluate.py \
@@ -297,28 +306,199 @@ outputs/metrics_gpt2xl.csv
 outputs/logs/evaluate_gpt2xl.log
 ```
 
-## 11. 一键运行顺序
+## 11. 生成 MEMIT 500 条数据
+
+生成 500 条 synthetic facts：
 
 ```bash
+python my_scripts/generate_memit_500.py \
+  --n 500 \
+  --out data/memit_500_with_subject.json
+```
+
+检查数据数量：
+
+```bash
+python - <<'PY'
+import json
+
+data = json.load(open("data/memit_500_with_subject.json", encoding="utf-8"))
+print(len(data))
+print(data[0])
+PY
+```
+
+应输出：
+
+```text
+500
+```
+
+## 12. 运行 MEMIT 500 条实验
+
+建议先运行 50 条检查流程：
+
+```bash
+CUDA_VISIBLE_DEVICES=2 python my_scripts/edit_memit.py \
+  --hparams my_hparams/MEMIT_gpt2_xl.yaml \
+  --data data/memit_500_with_subject.json \
+  --limit 50 \
+  --out outputs/memit_50_gpt2xl.json \
+  | tee outputs/logs/memit_50_gpt2xl.log
+```
+
+确认无误后运行 500 条：
+
+```bash
+export PYTHONPATH=$PWD:$PYTHONPATH
+export HF_DATASETS_OFFLINE=1
+export TRANSFORMERS_OFFLINE=1
+
+CUDA_VISIBLE_DEVICES=2 python my_scripts/edit_memit.py \
+  --hparams my_hparams/MEMIT_gpt2_xl.yaml \
+  --data data/memit_500_with_subject.json \
+  --limit 500 \
+  --out outputs/memit_500_gpt2xl.json \
+  | tee outputs/logs/memit_500_gpt2xl.log
+```
+
+输出文件：
+
+```text
+outputs/memit_500_gpt2xl.json
+outputs/logs/memit_500_gpt2xl.log
+```
+
+## 13. 运行 RAG 500 条对照实验
+
+RAG 对照实验不修改模型参数，而是基于外部知识库检索 500 条 synthetic facts。
+
+```bash
+python my_scripts/rag_compare.py \
+  --data data/memit_500_with_subject.json \
+  --out_json outputs/rag_compare_500.json \
+  --out_csv outputs/rag_compare_500.csv \
+  | tee outputs/logs/rag_compare_500.log
+```
+
+输出文件：
+
+```text
+outputs/rag_compare_500.json
+outputs/rag_compare_500.csv
+outputs/logs/rag_compare_500.log
+```
+
+## 14. 汇总完整指标
+
+汇总 ROME_10、MEMIT_10、MEMIT_500 和 RAG_500：
+
+```bash
+python my_scripts/evaluate_full.py \
+  --rome outputs/rome_results_gpt2xl.json \
+  --memit10 outputs/memit_debug_10_gpt2xl.json \
+  --memit500 outputs/memit_500_gpt2xl.json \
+  --rag outputs/rag_compare_500.json \
+  --out_json outputs/metrics_full.json \
+  --out_csv outputs/metrics_full.csv \
+  | tee outputs/logs/evaluate_full.log
+```
+
+输出文件：
+
+```text
+outputs/metrics_full.json
+outputs/metrics_full.csv
+outputs/logs/evaluate_full.log
+```
+
+完整实验的参考指标如下：
+
+```text
+ROME_10:   ES 0.0%,   PS 10.0%,  NS 40.0%,  EasyEdit rewrite_acc 95.0%
+MEMIT_10:  ES 0.0%,   PS 10.0%,  NS 40.0%,  time 17.69s, peak GPU 7.14GB
+MEMIT_500: ES 0.0%,   PS 0.0%,   NS 60.0%,  time 851.88s, peak GPU 7.14GB
+RAG_500:   ES 100.0%, PS 100.0%, NS 100.0%, time 0.65s, peak memory 0.69MB
+```
+
+## 15. 一键运行顺序
+
+```bash
+# 1. baseline
 python my_scripts/baseline.py \
   --model ./models/gpt2-xl \
   --data data/custom_10_with_subject.json \
   --out outputs/baseline_gpt2xl.json
 
+# 2. ROME 10
 python my_scripts/edit_rome.py \
   --hparams my_hparams/ROME_gpt2_xl.yaml \
   --data data/custom_10_with_subject.json \
   --out outputs/rome_results_gpt2xl.json
 
+# 3. MEMIT 10
 CUDA_VISIBLE_DEVICES=2 python my_scripts/edit_memit.py \
   --hparams my_hparams/MEMIT_gpt2_xl.yaml \
   --data data/custom_10_with_subject.json \
   --limit 10 \
   --out outputs/memit_debug_10_gpt2xl.json
 
-python my_scripts/evaluate.py \
+# 4. 生成 MEMIT 500 数据
+python my_scripts/generate_memit_500.py \
+  --n 500 \
+  --out data/memit_500_with_subject.json
+
+# 5. MEMIT 500
+CUDA_VISIBLE_DEVICES=2 python my_scripts/edit_memit.py \
+  --hparams my_hparams/MEMIT_gpt2_xl.yaml \
+  --data data/memit_500_with_subject.json \
+  --limit 500 \
+  --out outputs/memit_500_gpt2xl.json
+
+# 6. RAG 500
+python my_scripts/rag_compare.py \
+  --data data/memit_500_with_subject.json \
+  --out_json outputs/rag_compare_500.json \
+  --out_csv outputs/rag_compare_500.csv
+
+# 7. 完整指标汇总
+python my_scripts/evaluate_full.py \
   --rome outputs/rome_results_gpt2xl.json \
-  --memit outputs/memit_debug_10_gpt2xl.json \
-  --out_json outputs/metrics_gpt2xl.json \
-  --out_csv outputs/metrics_gpt2xl.csv
+  --memit10 outputs/memit_debug_10_gpt2xl.json \
+  --memit500 outputs/memit_500_gpt2xl.json \
+  --rag outputs/rag_compare_500.json \
+  --out_json outputs/metrics_full.json \
+  --out_csv outputs/metrics_full.csv
 ```
+
+## 16. 提交说明
+
+提交到 GitHub 时不建议包含以下内容：
+
+```text
+models/
+*.bin
+*.safetensors
+*.pt
+*.pth
+.cache/
+```
+
+建议提交：
+
+```text
+README.md
+requirements.txt
+my_scripts/
+my_hparams/
+data/custom_10_with_subject.json
+data/memit_500_with_subject.json
+outputs/metrics_gpt2xl.json
+outputs/metrics_gpt2xl.csv
+outputs/metrics_full.json
+outputs/metrics_full.csv
+outputs/rag_compare_500.json
+outputs/rag_compare_500.csv
+```
+
+如果 `outputs/memit_500_gpt2xl.json` 或日志过大，可以不上传完整文件，只在实验报告中说明运行结果，并提交 `metrics_full.json/csv`。
